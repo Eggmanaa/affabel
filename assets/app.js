@@ -63,6 +63,7 @@ function shuffleStable(arr, seedStr) {
 
 function initTitle() {
   $("#heroArt").style.backgroundImage = `url("${ART.hero.src}")`;
+  if (ART.hero.focus) $("#heroArt").style.backgroundPosition = ART.hero.focus;
   $("#heroCredit").textContent = ART.hero.credit;
 
   const input = $("#judgeName");
@@ -153,7 +154,9 @@ function openCase(id) {
   $("#caseApproach").textContent = c.approach;
   $("#caseIntro").textContent = c.intro;
   $("#evidenceList").innerHTML = c.review.map(e => `<li>${esc(e)}</li>`).join("");
-  $("#pleaBox").innerHTML = c.pleas.map(p => `<p>${esc(p)}</p>`).join("");
+  $("#pleaBox").innerHTML = c.says.map(p => `<p>${esc(p)}</p>`).join("");
+  $("#pleaNote").textContent = c.saysNote || "";
+  $("#pleaNote").hidden = !c.saysNote;
 
   $("#phaseVerdict").hidden = false;
   $("#phaseMeasure").hidden = true;
@@ -428,6 +431,12 @@ function deliver() {
     <p>${esc(c.reason)}</p>
     <h4>${affabel ? "On the station" : "On the measure"}</h4>
     <p>${esc(c.measureReason)}</p>
+    ${c.revealed ? `<h4>What the review turned up</h4>
+      <p>${c.revealed.map(esc).join("</p><p>")}</p>` : ""}
+    <h4>${verdictHit
+      ? "You ruled as Jalyn ruled. Here is what happened next"
+      : "What " + esc(c.name) + " said when the ruling came"}</h4>
+    <div class="plea plea-after">${c.response.map(p => `<p>${esc(p)}</p>`).join("")}</div>
     <h4>The texts, one at a time</h4>
     <div class="tx-list">${rows}</div>
     <div class="teachnote">

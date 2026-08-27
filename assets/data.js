@@ -16,9 +16,23 @@ function wmOriginal(path, file) {
 }
 
 const ART = {
+  /* The title screen. Vasnetsov puts the enthroned Judge at the top centre with
+     the assembly beneath him, and its warm dark palette sits well under gold type.
+     To swap in Michelangelo's Sistine Last Judgment instead, use:
+       src: wm("1/18", "Last_Judgement_%28Michelangelo%29.jpg", 1280),
+       credit: "Michelangelo, The Last Judgment, 1536-1541", focus: "center 24%"
+     It is the more famous image, and it is also full of nudes. */
   hero: {
+    src: wm("5/58", "Vasnetsov_Last_Judgment.jpg", 1280),
+    credit: "Viktor Vasnetsov, The Last Judgment, 1904",
+    focus: "center 16%"
+  },
+
+  /* no longer on the title screen, kept because it is the companion panel to
+     The Plains of Heaven and may be wanted again */
+  wrath: {
     src: wm("5/50", "John_Martin_-_The_Great_Day_of_His_Wrath_-_Google_Art_Project.jpg", 1280),
-    credit: "John Martin, The Great Day of His Wrath, 1851–53"
+    credit: "John Martin, The Great Day of His Wrath, 1851\u201353"
   },
   affabel: {
     src: wm("7/79", "John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg", 1280),

@@ -32,11 +32,18 @@ const CASES = [
     "Used his wealth to attract women and buy influence. Never attended a weekly gathering.",
     "Supported community projects and was considered a good citizen by most of Endel."
   ],
-  pleas: [
+  says: [
+    "Obviously I was wrong. The city is real and so is the king.",
+    "I have been a good citizen. I supported the community's volunteer services and paid for half the projects in Endel.",
+    "I remember being told he is loving and merciful. That is the part I remember.",
+    "I recognize half the people in this room. Thieves and drunkards, most of them. If they are here, I have nothing to fear."
+  ],
+  saysNote: "Drawn from his thoughts in the waiting hall. The parable gives him no formal plea before the ruling.",
+  response: [
     "Lord, why?",
     "But what about my good works? Didn't they outweigh my evil?",
     "How then can anyone be saved?",
-    "You are a merciful king! How can you send me away if this is so?"
+    "Yes, what you have said is all true, but, Jalyn, you are a merciful king! How can you send me away if this is so?"
   ],
   verdict: "lone", measure: "lower",
   ruling: "Independent, you are guilty of choosing an evil nature and are to be taken to the forsaken land of Lone.",
@@ -100,10 +107,18 @@ const CASES = [
     "He hated who he was and what he had done. He pledged the rest of his life to Jalyn's lordship.",
     "In the seven days remaining he went to everyone he had oppressed or stolen from, asked their forgiveness, and gave back more than he had taken."
   ],
-  pleas: [
-    "I was once known as Ruthless.",
+  says: [
+    "I was known as Ruthless. Anyone in Endel could tell you what that meant.",
+    "I never attended a single class. I never heard his word taught until seven days ago.",
+    "A woman paid for my dinner and would not let me leave until I had heard about him. I had two hours.",
     "I hated who I was and what I did.",
-    "Though I was only able to serve him for a week in Endel, I did so with all my heart."
+    "I went back to everyone I had oppressed or stolen from. I gave back more than I took."
+  ],
+  response: [
+    "I was once known as Ruthless, but Lord Jalyn changed my name at his Judgment Seat to Reconciled.",
+    "She explained it was not too late for me to give my life to this great leader.",
+    "Though I was only able to serve him for a week in Endel, I did so with all my heart.",
+    "I'm one who was shown possibly the greatest mercy before our king."
   ],
   verdict: "affabel", measure: "unspecified",
   ruling: "Lord Jalyn changed his name at the Judgment Seat to Reconciled.",
@@ -167,11 +182,18 @@ const CASES = [
     "Habitual slander and gossip, used to get what he wanted. Slandered his own brother.",
     "Reasoned: 'As long as I affirm my allegiance to Jalyn and do not hurt anyone too severely, I will remain in good standing.'"
   ],
-  pleas: [
-    "How have I denied you?",
-    "But, great king, I attended your school. I was faithful to not miss classes. I even called you lord!",
+  says: [
+    "Well guys, my number's up!",
+    "I believed in him. I said so, loudly, for years, and I almost never missed a meeting.",
+    "As long as I affirm my allegiance and do not hurt anyone too severely, I remain in good standing. That is how it works.",
+    "His mercy must be even vaster than we knew. Look how freely he has forgiven people I never imagined could make it."
+  ],
+  saysNote: "The first line is his; the rest is his own reasoning as the parable records it.",
+  response: [
+    "How have I denied you!",
+    "But, great king, I attended your school. I was faithful to not miss classes. I was involved in many activities. I even called you lord!",
     "But I had faith. I believed in you, so according to your word I should be saved!",
-    "But what about this evil man, Ruthless? I was better than him! You are not being fair!"
+    "But what about this evil man, Ruthless? I was better than him! How could you let him in and keep me out? You are not being fair!"
   ],
   verdict: "lone", measure: "upper",
   ruling: "Deceived, you are guilty of denying me, and are to be taken to the forsaken land of Lone.",
@@ -232,17 +254,27 @@ const CASES = [
     "Gave cheerfully to the School of Endel, both financially and through service.",
     "Treated everyone kindly out of a pure heart of love. Generous to those in need.",
     "Resolute in her stance for truth, in a community where that cost something.",
-    "Led a man named Brutal to Jalyn's service. He went on to influence more than a thousand lives.",
-    "Total lives influenced for the kingdom: just over five thousand."
+    "Led a man named Brutal to Jalyn's service. He went on to influence more than a thousand lives."
   ],
-  pleas: [
-    "Deception cannot hide within this hall.",
+  says: [
+    "I worked as a secretary to one of the city council members. I held no office.",
+    "I gave to the school, and I served there when I could.",
+    "I tried to be kind to people. I do not know what else to tell you.",
+    "There was a man named Brutal. I talked to him about the king."
+  ],
+  saysNote: "Composed from the record. The parable narrates her judgment only through what she says to Selfish afterward.",
+  response: [
+    "Deception cannot hide within this hall or the great city.",
     "In Endel, you were concerned with both image and reputation. This trains many to speak deceptively while unaware of their folly.",
-    "Here words are very important, but even weightier are our motives and intentions."
+    "Here words are very important, but even weightier are our motives and intentions, as they are always apparent here.",
+    "My dear brother, you will receive a just reward for your life in Endel."
   ],
   verdict: "affabel", measure: "throne",
   ruling: "She sits on one of the thrones. She is an underruler in Affabel, and Jalyn sends her to meet Selfish before he reaches the throne.",
   reason: "Jalyn explained her five thousand by the multiplication principle. Everyone the school served was credited to her because she funded and served the school. Every life Brutal reached was credited to her because she reached Brutal. Nothing she did looked like much on the day she did it.",
+  revealed: [
+    "Jalyn asked an underruler how many citizens Patient had influenced for the kingdom. The answer was just over five thousand."
+  ],
   measureReason: "A throne in the Regal Center, working directly alongside the king. She is one of the seventy-eight rulers of the city.",
   lesson: "Ask the class what they would have written on her performance review in Endel. Then ask what changed between that review and this one. Nothing about her life changed. Only the light it was read in.",
   texts: [
@@ -304,12 +336,19 @@ const CASES = [
     "In her heart she blamed Jalyn for allowing a corrupt man to teach in his school. Asked directly, she would still confess allegiance to him.",
     "She spent the rest of her days trying to get even with the people who had hurt her."
   ],
-  pleas: [
+  says: [
+    "I spoke up in every class. I organized the students. I had some of the best grades in my year.",
+    "Anyone who assessed our class would have named me the most passionate for his cause.",
+    "What was done to me was done by Slander and by Double Life. I was the one who was wronged.",
+    "I expect a scolding. I do not expect more than that."
+  ],
+  saysNote: "Drawn from her record and from her state of mind entering the hall, which the parable describes directly.",
+  response: [
     "Jalyn, did you say I am to be taken to the dreaded land of Lone?",
-    "I believe in you. This was clearly shown in my life review.",
-    "My heart became hardened and the love within me died, but that wasn't my fault. It was the fault of Slander and Double Life. They caused me to grow cold.",
+    "How can this be, lord Jalyn? I believe in you. This was clearly shown in my life review.",
+    "I know my heart became hardened and the love within me died, but that wasn't my fault. It was the fault of Slander and Double Life. They caused me to grow cold.",
     "But what about all the good I did?",
-    "You said if I confessed you as my Savior my name would be written in the Book of Life. How could it have been erased?"
+    "You said if I confessed you as my Savior my name would be written in the Book of Life. Why can't your scribe find my name? How could it have been erased?"
   ],
   verdict: "lone", measure: "upper",
   ruling: "Faint Heart, you are guilty of falling away from righteousness and denying me by treason, and are to be taken to the forsaken land of Lone.",
@@ -373,10 +412,18 @@ const CASES = [
     "'The little I gave was to ease my conscience.' He gave out of guilt and compulsion rather than compassion and love.",
     "He had the time to serve at the school and did not. The load was carried by the few who did."
   ],
-  pleas: [
-    "If I had known in Endel what I know now, I would have lived differently.",
-    "I would have focused more on pleasing the king.",
-    "Anything he gives you will be a reward. None of us would have a life such as this had it not been for him."
+  says: [
+    "I ran one of the best restaurants in Endel.",
+    "I sponsored the community's events. I gave free meals to the fundraising campaigns and gave up whole evenings of revenue to do it.",
+    "I contributed to the School of Endel every year.",
+    "Ask anyone in that community what kind of man I was."
+  ],
+  saysNote: "Composed from the record. He tells Selfish the truth about his motives only after his own judgment.",
+  response: [
+    "I did those things to gain recognition and acceptance. I also knew it would draw more patrons. My motive was not to bless but to insure my success.",
+    "I actually only gave a small percentage. I hoarded much of the profits because I was afraid of failing.",
+    "The little I gave I did to ease my conscience of my lack of commitment to his kingdom.",
+    "I really didn't deserve anything I received from him. I am in debt to his extravagant kindness for the rest of my life."
   ],
   verdict: "affabel", measure: "flatlands",
   ruling: "His name is no longer Social. Jalyn renamed him Content. He lives in the flatlands and works as a plumber. He is one of the least citizens of Affabel.",
@@ -441,11 +488,19 @@ const CASES = [
     "He saw the flimsy walls in his students' lives and covered them with whitewash rather than tearing them down.",
     "A good number of his former students are now in the forsaken land of Lone."
   ],
-  pleas: [
-    "This is my position and place. I am one of the least of the citizens of Affabel.",
-    "I failed as a teacher in so many ways. My teachings were unbalanced.",
+  says: [
+    "I taught his principles for years, and I taught them accurately.",
+    "My students left my classroom encouraged. They came back. They liked me.",
+    "The other teachers were uplifting too, but they could be stern, and their words brought painful conviction. Mine did not.",
+    "I never told a student anything that was untrue."
+  ],
+  saysNote: "Composed from the record and from Selfish's memory of his classroom. His confession comes only after his judgment.",
+  response: [
+    "I failed as a teacher in so many ways. First, my teachings were unbalanced. I emphasized only the positive aspects of serving Jalyn.",
+    "I didn't give the students what they needed. I gave them what they wanted. I didn't want to lose their acceptance or my popularity.",
+    "I knew deep in my conscience that these were flimsy walls, but I didn't warn them. I said all was well when it wasn't.",
     "Though some made it to Affabel, I yet grieve for those at Lone.",
-    "Much of what we considered great there is considered least here."
+    "My name is Humbled."
   ],
   verdict: "affabel", measure: "flatlands",
   ruling: "His name is no longer Motivator. Jalyn renamed him Humbled. He is in the back rows, one of the least citizens of the city.",
@@ -499,7 +554,7 @@ const CASES = [
   hall: "justice",
   art: { src: wm("e/e6", "Caravaggio_-_Taking_of_Christ_-_Dublin.jpg", 960),
          credit: "Caravaggio, The Taking of Christ, 1602" },
-  approach: "He is the last person called out of the Hall of Justice. He already knows the judgment will not be favorable. He faints on the way in, and the guards have to carry him to the seat.",
+  approach: "He is the last person called. He already knows the writings better than anyone else in the room, and he has to be helped up the steps by the guards.",
   intro: "One of the most gifted teachers of Jalyn in the school, and one of the best-looking men in the community. He lived one way in the classroom and another way in private. Because he was a teacher he had been privileged to see Jalyn in person.",
   review: [
     "A dynamic and knowledgeable teacher. Personally acquainted with Jalyn, a privilege given to teachers alone.",
@@ -509,10 +564,18 @@ const CASES = [
     "Faint Heart resigned, stopped attending the gatherings, hardened, and has been sentenced to Lone.",
     "He knew and taught the ancient writings, including every passage now being read against him."
   ],
-  pleas: [
+  says: [
+    "I was one of his teachers. I was permitted to see him in person, which few in Endel ever were.",
+    "I gave my life to his school and to his cause.",
+    "I know the writings. I taught them.",
+    "I was not like Independent. I never had nothing to do with him."
+  ],
+  saysNote: "Composed from the record and from the defense he makes at the seat.",
+  response: [
     "Lord, but I was a teacher in your school. I gave my life for your cause.",
     "How was I a stumbling block?",
-    "But Jalyn, I know I'm to be banned to Lone, but why am I to receive the greatest torment? Why are you so hard on me? I was one of your servants, not an unbeliever. I wasn't like Independent, who would have nothing to do with you. Why?"
+    "But Jalyn, why am I to receive the greatest torment? Why are you so hard on me? I was one of your servants, not an unbeliever. I wasn't like Independent, who would have nothing to do with you. Why?",
+    "(As the Chief Guard approached, he spewed profanities at Jalyn, at the guards, and at the citizens of Affabel, and tried to break free to attack the king.)"
   ],
   verdict: "lone", measure: "blackest",
   ruling: "Double Life, you are guilty of treason, falling away from righteousness, and being a stumbling block, and are to be taken to the forsaken land of Lone, where you will receive the greatest punishment and torments.",
@@ -573,17 +636,26 @@ const CASES = [
     "Wrote for the community newspaper and repeatedly used his column to name the citizens' lack of commitment toward the kingdom.",
     "Rallied Endelites to phone and email council members supporting the school's expansion.",
     "Made his displeasure public when Selfish swayed the vote and denied the school its land.",
-    "Widely regarded as too zealous. Selfish disliked him for it.",
-    "Personally influenced more than a thousand lives for the kingdom."
+    "Widely regarded as too zealous. Selfish disliked him for it."
   ],
-  pleas: [
-    "(He is still waiting in the Hall of Life when Selfish is judged. Jalyn speaks of him in his absence.)",
+  says: [
+    "I wrote a column in the community paper and I used it to say what nobody wanted said.",
+    "I told this community it was not serious about the kingdom, and I named names.",
+    "When the mayor swayed the vote and denied the school its land, I made my displeasure public.",
+    "People found me difficult. I am aware of that."
+  ],
+  saysNote: "Composed from the record. He is still waiting in the other hall when Jalyn speaks about him, so the parable gives him no plea.",
+  response: [
     "Jalyn: 'He will be renamed Evangelist because he became a great communicator of my ways.'",
-    "Jalyn: 'He personally influenced over a thousand lives for the kingdom.'"
+    "Jalyn: 'He personally influenced over a thousand lives for the kingdom.'",
+    "Jalyn: 'All those lives he built were credited to Patient's account, because she led him to my service and supported the school that trained him.'"
   ],
   verdict: "affabel", measure: "unspecified",
   ruling: "He will be renamed Evangelist. Every life he built was also credited to Patient, because she led him to Jalyn and supported the school that trained him.",
   reason: "Selfish had read him as obnoxious. Jalyn read him as a great communicator of his ways. The parable's point lands in Selfish's own reaction: “Now he felt ashamed as he realized all Brutal stood for was in line with the kingdom's advancement. How could Selfish have been so blind?”",
+  revealed: [
+    "Jalyn states that Brutal personally influenced more than a thousand lives for the kingdom, and that every one of them was also credited to Patient."
+  ],
   measureReason: "The parable does not narrate his sentencing. He is still in the Hall of Life awaiting judgment when Selfish is called, so his verdict is certain but his station is not stated. This case is scored on the verdict alone.",
   lesson: "The one nobody liked. Ask whether any student docked him for being annoying, and where in the Book that criterion appears. Then note the multiplication: his thousand lives also went onto Patient's account. Nobody's ledger is only their own.",
   texts: [
@@ -645,14 +717,25 @@ const CASES = [
     "Facing reelection and feeling remorseful, gave the school five thousand dollars and promised to find them other land. It restored the confidence of many.",
     "Often motivated by compassion. When it mattered, he looked out for himself."
   ],
-  pleas: [
-    "I deserve to be punished the rest of my life.",
-    "I deserve Lone. I've wasted so much and produced so little in return for the talents and responsibilities I had.",
-    "(He braces himself to hear the sentence to Lone.)"
+  says: [
+    "I was mayor. I led that community for two years and it thrived under me.",
+    "I believed in him and I never doubted the city existed. I said so publicly and often.",
+    "I steered clear of the drinking. I broke none of the major laws.",
+    "I have seen the thrones near the front, and I have seen that two of them are empty. I expect one of them."
+  ],
+  saysNote: "Drawn from his own reasoning and from his thoughts as he entered, which the parable states plainly.",
+  response: [
+    "I deserve to be punished the rest of my life. I deserve Lone. I've wasted so much and produced so little in return for the talents and responsibilities I had.",
+    "(He braced himself to hear the sentence, and wept when he heard something else.)",
+    "Rule with you in the outer realms?",
+    "(He bowed his head and wept. The kindness of the king was overwhelming.)"
   ],
   verdict: "affabel", measure: "flatlands",
   ruling: "Selfish, you are my servant. You believed in me and submitted to my lordship even though you wasted so much. I love and welcome you into my kingdom for the rest of your life.",
   reason: "He watched nearly everything he had done burn, and still heard those words. Jalyn renamed him Unpretentious, gave him a home in the flatlands and work as a landscaper, and then added something he had not expected: he would train the landscapers of twenty cities on the continent of Bengilla. “All who live in this city are rulers.”",
+  revealed: [
+    "Jalyn asked how many citizens Selfish had impacted for the kingdom. Very few were named."
+  ],
   measureReason: "The flatlands. A landscaper. Not a ruler in the city of Affabel itself, though he assists in administering the outer realms.",
   lesson: "Selfish passed his own sentence before Jalyn spoke, and he got it wrong in the harsh direction. Worth asking: was he wrong about what he deserved, or only about what he would receive? The parable seems to say he was right about the first and had no idea about the second.",
   texts: [
@@ -702,7 +785,7 @@ const CASES = [
   hall: "life",
   art: { src: wm("1/10", "William-Adolphe_Bouguereau_%281825-1905%29_-_Charity_%281878%29.jpg", 960),
          credit: "William-Adolphe Bouguereau, Charity, 1878" },
-  approach: "She is the last one left in the Hall of Life, reading alone. As she walks the aisle, the regal citizens of Affabel bow to her as she passes, and she cannot understand why.",
+  approach: "She is the last one left in her hall, reading alone, when the Chief Guard comes for her. She walks the long aisle with her eyes fixed on the distant throne.",
   intro: "She took Jalyn's laws to heart and searched out the reasoning behind each one. She received the smallest sum of the five at graduation, twenty-five thousand dollars, and gave three of it away the same week.",
   review: [
     "Gave three thousand of her twenty-five thousand to the school's land drive on graduation, before starting anything.",
@@ -711,19 +794,28 @@ const CASES = [
     "Contributed food to the school's soup kitchen and regularly worked the food line herself.",
     "Helped citizens who were working hard and could not make ends meet, and told each of them where her own success came from.",
     "Never included in the socials at Selfish's home. Never asked into any leadership role. Considered too radical, and a woman.",
-    "Paid for a meal for a man named Ruthless one week before Judgment Day and spent two hours telling him about Jalyn.",
-    "Some of her works were burned up as well, and she grieved them. Only a small fraction of her labors was lost.",
-    "Total lives influenced for the kingdom: 5,183. A little more than one sixth of Endel."
+    "Paid for a meal for a man named Ruthless one week before Judgment Day and spent two hours telling him about Jalyn."
   ],
-  pleas: [
-    "Sir, it is I who've greatly longed for this moment.",
-    "When, Lord, did I ever see you hungry and feed you, or thirsty and give you a drink?",
+  says: [
+    "I received twenty-five thousand at graduation, less than anyone I knew. I gave three of it to the school that same week.",
+    "I built a restaurant. When it did well I gave a quarter of everything it made back to the school.",
+    "I worked the food line at the soup kitchen when I could.",
+    "I was never invited to the socials at the mayor's house, and I was never asked into any leadership role. I did not mind."
+  ],
+  saysNote: "Composed from the record. Her only words at the seat come after Jalyn has already spoken.",
+  response: [
+    "Sir, it is I who've greatly longed for this moment. You are my king.",
+    "When, Lord, did I ever see you hungry and feed you, or thirsty and give you a drink? When did I ever see you a stranger and welcome you in my home?",
     "Lord, I'm not worthy to rule. I was simply a restaurant owner. There are so many who are more gifted than I.",
     "Please give me a job that just serves you or your people."
   ],
   verdict: "affabel", measure: "throne",
   ruling: "Well done. You are a trustworthy servant. You have been faithful with the little I entrusted to you, so you will be governor of ten districts and twenty cities as your reward.",
   reason: "Jalyn greeted her with Matthew 25 word for word, and she gave the same answer the righteous give in the Gospel: when did I ever see you hungry? He crowned her with the Crown of the Overcomer, renamed her Cherished Overcomer, seated her on a throne near his own, made her governor of ten districts and prime minister of the continent of Bengilla, and gave her a home on the coast of the Great Sea because he knew she loved the sound of waves.",
+  revealed: [
+    "Jalyn asked how many lives Charity had influenced for his kingdom. The answer was 5,183, a little more than one sixth of the population of Endel.",
+    "Some of her works were burned up as well, and it brought her real sorrow. Only a small fraction of her labors was lost."
+  ],
   measureReason: "A throne beside his. One of seventy-eight rulers of the city. She reports to no one but him.",
   lesson: "End here. She had the least money, the least status, the least invitation, and she asked for a smaller job when the throne was offered. Then set her next to Social, the other restaurant owner, and let the class argue about what the actual difference was.",
   texts: [
