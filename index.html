@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Judgment Seat of Affabel</title>
+<meta name="description" content="Take the throne of King Jalyn and rule on eleven citizens of Endel. An experiential activity on the parable of the Kingdom of Affabel.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9878;</text></svg>">
+</head>
+<body>
+
+<div class="hero-art" id="heroArt" aria-hidden="true"></div>
+
+<!-- ============ TITLE ============ -->
+<section class="screen active" id="title">
+  <div class="title-inner">
+    <h1><em>The Kingdom of Affabel</em>The Judgment Seat</h1>
+
+    <p class="title-verse">“I am the searcher of hearts and minds and I will give each of you what your works deserve.”</p>
+    <p class="title-cite">Revelation 2:23 &nbsp;·&nbsp; NABRE</p>
+
+    <hr class="rule">
+
+    <p style="color:var(--parchment-2);max-width:36em;margin:0 auto">
+      Today you do not stand before the throne. You sit on it.
+      Eleven citizens of Endel will be brought in one at a time. You will see their whole lives,
+      hear them speak in their own words, and rule. Then you will find out what King Jalyn actually said.
+    </p>
+
+    <div class="namebox">
+      <label for="judgeName">Enter your name for the record</label>
+      <input type="text" id="judgeName" autocomplete="off" spellcheck="false" placeholder="Your name">
+    </div>
+
+    <p id="resumeNote" hidden style="font-size:13px;color:var(--gold);margin-top:16px">
+      You have <span id="resumeCount"></span> case(s) already on record. They are saved on this device.
+    </p>
+
+    <div style="margin-top:30px">
+      <button class="btn btn-solid" id="beginBtn">Take the throne</button>
+    </div>
+
+    <p style="font-size:10.5px;color:var(--faint);margin-top:52px" id="heroCredit"></p>
+  </div>
+</section>
+
+<!-- ============ BRIEFING ============ -->
+<section class="screen" id="briefing">
+  <div class="wrap pad">
+
+    <div class="section-head">
+      <span class="eyebrow">The Chief Guard's briefing</span>
+      <h2>Before the doors open</h2>
+    </div>
+
+    <p class="lede">
+      He has always loved them, and he has yearned for this day. Though they have never met him,
+      he has seen them. He has beheld their hearts and discerned their fruit. Nothing has been hidden.
+      Know that his judgment is just. None will be slighted or misrepresented.
+    </p>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.9rem;margin-bottom:6px">The question put to every citizen</h3>
+    <div class="scroll-quote">
+      Prepare a full account of your stewardship, because you can no longer be my steward.
+      <cite>Luke 16:2 &nbsp;·&nbsp; NABRE</cite>
+    </div>
+    <p style="color:var(--parchment-2);max-width:44em">
+      A screen above the throne replays the citizen's entire life from the first day of school until the day before.
+      Every deed. Every word. Every motive behind both. The whole assembly watches it with you.
+    </p>
+    <div class="scroll-quote">
+      No creature is concealed from him, but everything is naked and exposed to the eyes of him to whom we must render an account.
+      <cite>Hebrews 4:13 &nbsp;·&nbsp; NABRE</cite>
+    </div>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.9rem">The two destinations</h3>
+    <p style="color:var(--muted);max-width:44em;margin-top:-4px">
+      After the review, the Chief Scribe is asked one question: is this name found in the Book of Life?
+      Everything else follows from the answer.
+    </p>
+
+    <div class="law-grid">
+      <div class="law law-affabel">
+        <div class="docket-thumb" id="briefAffabelArt" style="aspect-ratio:16/9;border-radius:2px;margin-bottom:16px"></div>
+        <span class="eyebrow">Destination one</span>
+        <h3>Affabel</h3>
+        <p>The city itself. Citizenship for the rest of their life. But the parable is blunt that not all citizens are rewarded equally, and the difference is enormous.</p>
+        <ul class="tierlist">
+          <li><strong>A throne beside mine</strong> Underruler in the Regal Center, governing the city and the outer realms.</li>
+          <li><strong>The mountains</strong> The midsection. Creative work, a good home, a real place.</li>
+          <li><strong>The flatlands</strong> The least in the kingdom. Labor-intensive work, the back rows of the hall.</li>
+        </ul>
+      </div>
+
+      <div class="law law-lone">
+        <div class="docket-thumb" id="briefLoneArt" style="aspect-ratio:16/9;border-radius:2px;margin-bottom:16px"></div>
+        <span class="eyebrow">Destination two</span>
+        <h3>The forsaken land of Lone</h3>
+        <p>A windowless metal structure in the Great Desert of Fire, and one place beneath it. Utter darkness, hopelessness, and loneliness for the remainder of their life.</p>
+        <ul class="tierlist">
+          <li><strong>The lower level</strong> For those who never truly knew, yet still did what deserves exile.</li>
+          <li><strong>The upper level</strong> Where the heat is greatest. For those who knew and refused.</li>
+          <li><strong>The dungeon beneath</strong> Alone, near the sulfur rocks. The blackness of darkness, reserved forever.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.9rem">How you will rule</h3>
+    <p style="color:var(--parchment-2);max-width:44em">
+      Three decisions on every case. First the destination. Then the station or the measure.
+      Then the hardest one: name the Scripture your judgment rests on. A verdict you cannot ground in the writings
+      is not a judgment, it is an opinion.
+    </p>
+    <p style="color:var(--muted);max-width:44em;font-size:15px">
+      One warning. The docket is deliberately shuffled. Do not assume the person in front of you came from
+      the same hall as the last one, and do not assume the pattern you just spotted will hold.
+    </p>
+
+    <div class="btn-row" style="margin-top:36px;justify-content:center">
+      <button class="btn btn-solid" id="toDocket">Open the docket</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCKET ============ -->
+<section class="screen" id="docket">
+  <div class="topbar"><div class="wrap">
+    <span class="topbar-title">The Judgment Seat of <b>Affabel</b></span>
+    <div class="btn-row">
+      <button class="btn btn-ghost" id="reviewLawBtn">The law</button>
+      <button class="btn btn-ghost" id="recordBtn">Verdict record</button>
+    </div>
+  </div></div>
+
+  <div class="wrap pad">
+    <div class="section-head">
+      <span class="eyebrow">The docket</span>
+      <h2>Eleven citizens of Endel</h2>
+    </div>
+    <p class="lede" id="docketGreeting"></p>
+
+    <div class="progress-line">
+      <span class="progress-text">Progress</span>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0"></div></div>
+      <span class="progress-text" id="progressText"></span>
+    </div>
+
+    <div class="docket-grid" id="docketGrid"></div>
+
+    <div class="btn-row" style="margin-top:44px;justify-content:center">
+      <button class="btn btn-ghost" id="resetBtn">Clear all verdicts</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE ============ -->
+<section class="screen" id="case">
+  <div class="topbar"><div class="wrap">
+    <span class="topbar-title" id="caseIndex"></span>
+    <button class="btn btn-ghost" id="backToDocket">Back to docket</button>
+  </div></div>
+
+  <div class="wrap">
+    <div class="case-portrait" id="casePortrait"></div>
+    <p class="art-credit" id="caseArtCredit"></p>
+
+    <div class="case-head">
+      <div>
+        <h1 class="case-name" id="caseName"></h1>
+        <div class="case-trade" id="caseTrade"></div>
+      </div>
+    </div>
+
+    <p style="font-family:var(--serif);font-size:1.3rem;color:var(--parchment-2);max-width:44em" id="caseApproach"></p>
+    <p style="color:var(--muted);max-width:44em" id="caseIntro"></p>
+
+    <!-- life review -->
+    <div class="phase">
+      <div class="phase-label"><span class="n">I</span><h3>The life review</h3></div>
+      <p style="color:var(--faint);font-size:14px;margin-top:-8px;margin-bottom:14px">
+        Every deed, word, and motive, played before the assembly.
+      </p>
+      <ul class="evidence" id="evidenceList"></ul>
+    </div>
+
+    <!-- plea -->
+    <div class="phase">
+      <div class="phase-label"><span class="n">II</span><h3>The defendant speaks</h3></div>
+      <div class="plea" id="pleaBox"></div>
+    </div>
+
+    <!-- verdict -->
+    <div class="phase" id="phaseVerdict">
+      <div class="phase-label"><span class="n">III</span><h3>Your verdict</h3></div>
+      <p class="your-call">Where does this citizen go?</p>
+      <div class="choices choices-2" id="verdictChoices"></div>
+    </div>
+
+    <!-- station / measure -->
+    <div class="phase" id="phaseMeasure" hidden>
+      <div class="phase-label"><span class="n">IV</span><h3 id="measureHeading"></h3></div>
+      <p class="your-call" id="measureSub"></p>
+      <div class="choices" id="measureChoices"></div>
+    </div>
+
+    <!-- scripture -->
+    <div class="phase" id="phaseVerse" hidden>
+      <div class="phase-label"><span class="n">V</span><h3>Ground your judgment</h3></div>
+      <p class="your-call">Which text does your ruling rest on?</p>
+      <div class="choices" id="verseChoices"></div>
+    </div>
+
+    <!-- ruling -->
+    <div class="ruling" id="rulingBox" hidden>
+      <div class="ruling-banner" id="rulingBanner"></div>
+      <div class="ruling-body" id="rulingBody"></div>
+    </div>
+
+    <div class="btn-row" id="caseNav" hidden style="margin-top:34px;justify-content:center">
+      <button class="btn btn-solid" id="nextCaseBtn"></button>
+      <button class="btn btn-ghost" onclick="document.getElementById('backToDocket').click()">Return to docket</button>
+    </div>
+
+    <div style="height:70px"></div>
+  </div>
+</section>
+
+<!-- ============ RECORD ============ -->
+<section class="screen" id="record">
+  <div class="topbar"><div class="wrap">
+    <span class="topbar-title">Verdict record</span>
+    <div class="btn-row">
+      <button class="btn btn-ghost" id="backFromRecord">Back to docket</button>
+      <button class="btn btn-ghost" id="printBtn">Print / save PDF</button>
+    </div>
+  </div></div>
+
+  <div class="wrap pad">
+    <div class="section-head">
+      <span class="eyebrow">The bench of</span>
+      <h2 id="recordJudge"></h2>
+      <p style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px" id="recordDate"></p>
+    </div>
+
+    <div class="tally">
+      <div class="tally-cell"><div class="tally-num" id="tallyVerdict"></div><div class="tally-lab">Verdicts matched</div></div>
+      <div class="tally-cell"><div class="tally-num" id="tallyStation"></div><div class="tally-lab">Stations matched</div></div>
+      <div class="tally-cell"><div class="tally-num" id="tallyVerse"></div><div class="tally-lab">Texts matched</div></div>
+      <div class="tally-cell"><div class="tally-num" id="tallyHarsh"></div><div class="tally-lab">Harsher than Jalyn</div></div>
+      <div class="tally-cell"><div class="tally-num" id="tallySoft"></div><div class="tally-lab">Gentler than Jalyn</div></div>
+    </div>
+
+    <p class="lede" id="recordRead" style="text-align:left"></p>
+
+    <hr class="rule">
+
+    <div class="table-scroll">
+      <table class="record-table">
+        <thead><tr>
+          <th>Citizen</th><th>Your ruling</th><th>Verdict</th><th>Station</th><th>Text</th>
+        </tr></thead>
+        <tbody id="recordRows"></tbody>
+      </table>
+    </div>
+
+    <div class="closing">
+      <div class="docket-thumb" id="recordArt" style="aspect-ratio:21/9;border-radius:2px;margin-bottom:28px"></div>
+      <h3>You have judged eleven people today</h3>
+      <div class="scroll-quote">
+        “I am the searcher of hearts and minds and I will give each of you what your works deserve.”
+        <cite>Revelation 2:23 &nbsp;·&nbsp; NABRE</cite>
+      </div>
+      <p style="color:var(--parchment-2);max-width:36em;margin:22px auto 0">
+        Every one of them was certain they knew how this would go. Two of them were right.
+        The parable ends by handing the question back: if your own life were on that screen this afternoon,
+        every deed and every word and the motive under each one, what would the assembly see?
+      </p>
+      <p style="font-family:var(--serif);font-size:1.25rem;font-style:italic;color:var(--gold-lit);margin-top:24px">
+        Beauty had been theirs for the choosing.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><strong style="color:var(--muted)">The Judgment Seat of Affabel.</strong>
+       An experiential activity built on the parable of the Kingdom of Affabel from John Bevere, <em>Driven by Eternity</em>, chapters 2, 3 and 8.
+       Character names, dialogue, and rulings are drawn from that text.</p>
+    <p>Scripture quotations are from the New American Bible, Revised Edition (NABRE), &copy; 2010, 1991, 1986, 1970
+       Confraternity of Christian Doctrine, Washington, D.C. Used for classroom instruction.</p>
+    <p>Paintings are public domain, served from Wikimedia Commons. Individual works are credited on each case.</p>
+    <p>Built for Theology 11 at Bishop García Diego High School.</p>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
