@@ -526,6 +526,8 @@ function renderRecord() {
     read = `You ruled harsher than Jalyn ${harsher} times and gentler ${softer}. Your instinct is to convict. Notice that the parable's biggest surprises run the other way: Ruthless, Selfish, and Motivator all received more than they had coming.`;
   } else if (softer > harsher * 2 && softer >= 3) {
     read = `You ruled gentler than Jalyn ${softer} times and harsher ${harsher}. Your instinct is to acquit. Notice who that instinct would have let through: Deceived and Faint Heart both counted on exactly the mercy you extended.`;
+  } else if (v <= 3) {
+    read = `You matched Jalyn on ${v} of the ${CASES.length} cases. Before deciding you did badly, look at which ones you missed. If they cluster on Ruthless, Patient, Social, Motivator, and Brutal, you were not judging carelessly. You were judging the way Endel judged, by record and by reputation, and that is exactly the instinct this parable was built to expose.`;
   } else if (harsher === 0 && softer === 0) {
     read = `You matched Jalyn on every case, in both direction and degree. Either you know this parable very well or you read the standard rather than the résumé.`;
   } else {
