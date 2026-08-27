@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Title Screen Options · Affabel</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9878;</text></svg>">
+<style>
+  .screen { display: block; }
+  .opt { margin-bottom: 46px; }
+  .opt-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:12px; }
+  .opt-head h3 { margin:0; font-size:1.6rem; color:var(--gold-lit); }
+  .opt-head .k { font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
+  .mock { position:relative; height:420px; border:1px solid var(--edge); border-radius:3px; overflow:hidden; background:var(--ink); }
+  .mock .art { position:absolute; inset:0; background-size:cover; filter:saturate(.85) contrast(1.05); opacity:.46; }
+  .mock .veil { position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(10,9,6,.72) 0%, rgba(10,9,6,.55) 40%, rgba(10,9,6,.95) 100%); }
+  .mock .type { position:relative; text-align:center; padding-top:96px; }
+  .mock .type .eyebrow2 { font-family:var(--sans); font-size:12px; font-weight:600; letter-spacing:.3em;
+    text-transform:uppercase; color:var(--gold); }
+  .mock .type h2 { font-family:var(--serif); font-weight:300; font-size:3.4rem; margin:12px 0 0; color:var(--parchment);
+    text-shadow:0 2px 40px rgba(0,0,0,.8); }
+  .mock .type p { font-family:var(--serif); font-style:italic; font-size:1.15rem; color:var(--parchment-2);
+    max-width:32em; margin:20px auto 0; }
+  .opt-note { font-size:14.5px; color:var(--parchment-2); margin:12px 0 0; max-width:52em; }
+  .opt-note b { color:var(--gold-lit); font-weight:400; }
+  .raw { display:block; margin-top:10px; font-size:12px; color:var(--faint); }
+</style>
+</head>
+<body>
+
+<section class="screen active">
+  <div class="topbar"><div class="wrap">
+    <span class="topbar-title">Title screen options &nbsp;·&nbsp; <b>Affabel</b></span>
+    <a class="btn btn-ghost" href="index.html">Back to the activity</a>
+  </div></div>
+
+  <div class="wrap pad">
+    <div class="section-head">
+      <span class="eyebrow">Pick one</span>
+      <h2>God enthroned in judgment</h2>
+    </div>
+    <p class="lede">
+      Each is shown exactly as it would appear behind the real title screen: same opacity,
+      same gradient, same type. Tell me which and I will set it, or say the word and I will
+      try something else entirely.
+    </p>
+
+    <hr class="rule">
+    <div id="opts"></div>
+
+    <div class="teachnote">
+      <span class="eyebrow">One note before you choose</span>
+      <p>Michelangelo's is the most famous image of this subject in Western art and it hangs in
+      the Pope's own chapel, so it is entirely defensible in a Catholic classroom. It is also
+      full of nudes, and at full bleed behind a student-facing page that is a call you should
+      make rather than me. It is on the list for that reason, not left off.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap"><p>All public domain, served from Wikimedia Commons.</p></div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script>
+(function () {
+  const C = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
+  const wmx = (p, f, w) => C + p + "/" + f + "/" + w + "px-" + f;
+
+  const OPTIONS = [
+    { key: "vandeweyden", current: true,
+      src: ART.hero.src, focus: ART.hero.focus,
+      title: "Rogier van der Weyden, The Last Judgment",
+      sub: "Beaune Altarpiece, c. 1450",
+      note: "<b>Currently live.</b> The only one of these already composed as a wide band, which is what a full-bleed header actually needs. Christ sits enthroned on the rainbow dead centre, with Michael weighing souls directly beneath him. Nothing important gets cropped away." },
+    { key: "vasnetsov",
+      src: wmx("5/58", "Vasnetsov_Last_Judgment.jpg", 1280), focus: "center 12%",
+      title: "Viktor Vasnetsov, The Last Judgment",
+      sub: "1904",
+      note: "Warmest palette of the four and the easiest match for the gold. Every figure is robed. The painting is square, so a wide crop keeps the heavenly court and loses some of Christ above it." },
+    { key: "michelangelo",
+      src: wmx("1/18", "Last_Judgement_%28Michelangelo%29.jpg", 1280), focus: "center 24%",
+      title: "Michelangelo, The Last Judgment",
+      sub: "Sistine Chapel, 1536-1541",
+      note: "The definitive image of the subject. Christ lands almost exactly behind the title. Cooler and bluer than the rest of the site, and the crop band is mostly bare figures." },
+    { key: "martin",
+      src: wmx("8/80", "John_Martin_-_The_Last_Judgement_-_Google_Art_Project.jpg", 1280), focus: "center 45%",
+      title: "John Martin, The Last Judgement",
+      sub: "1853",
+      note: "The missing panel of the triptych already supplying Affabel and Lone elsewhere on the site, so it is the most coherent choice. The throne is small and pale, and at background opacity it reads as weather rather than as a judge." }
+  ];
+
+  document.getElementById("opts").innerHTML = OPTIONS.map(o => `
+    <div class="opt">
+      <div class="opt-head">
+        <h3>${o.title}</h3>
+        <span class="k">${o.current ? "live now &nbsp;·&nbsp; " : ""}${o.sub}</span>
+      </div>
+      <div class="mock">
+        <div class="art" style="background-image:url('${o.src}');background-position:${o.focus}"></div>
+        <div class="veil"></div>
+        <div class="type">
+          <div class="eyebrow2">The Kingdom of Affabel</div>
+          <h2>The Judgment Seat</h2>
+          <p>&ldquo;I am the searcher of hearts and minds and I will give each of you what your works deserve.&rdquo;</p>
+        </div>
+      </div>
+      <p class="opt-note">${o.note}
+        <span class="raw">focus: ${o.focus}</span>
+      </p>
+    </div>`).join("");
+})();
+</script>
+</body>
+</html>

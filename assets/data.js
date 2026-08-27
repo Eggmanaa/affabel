@@ -16,16 +16,14 @@ function wmOriginal(path, file) {
 }
 
 const ART = {
-  /* The title screen. Vasnetsov puts the enthroned Judge at the top centre with
-     the assembly beneath him, and its warm dark palette sits well under gold type.
-     To swap in Michelangelo's Sistine Last Judgment instead, use:
-       src: wm("1/18", "Last_Judgement_%28Michelangelo%29.jpg", 1280),
-       credit: "Michelangelo, The Last Judgment, 1536-1541", focus: "center 24%"
-     It is the more famous image, and it is also full of nudes. */
+  /* The title screen. Van der Weyden's Beaune polyptych is the one Last Judgment
+     by a master that is already composed as a wide band with the enthroned Judge
+     dead centre, which is what a full-bleed header needs. Alternatives are on
+     /hero-options.html; swapping one in is a two-line edit here. */
   hero: {
-    src: wm("5/58", "Vasnetsov_Last_Judgment.jpg", 1280),
-    credit: "Viktor Vasnetsov, The Last Judgment, 1904",
-    focus: "center 16%"
+    src: wm("4/4a", "Rogier_van_der_Weyden_-_The_Last_Judgment_Polyptych_-_WGA25625.jpg", 1280),
+    credit: "Rogier van der Weyden, The Last Judgment (Beaune Altarpiece), c. 1450",
+    focus: "center 30%"
   },
 
   /* no longer on the title screen, kept because it is the companion panel to
