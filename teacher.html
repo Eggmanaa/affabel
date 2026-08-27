@@ -68,14 +68,18 @@
 
     <h3 style="font-size:1.7rem">Before they start</h3>
     <p style="color:var(--parchment-2);max-width:44em">
-      Tell them two things and nothing more. First, they are the judge, not the defendant.
-      Second, they will be asked to name the Scripture their ruling rests on, so a hunch is
-      not going to be enough. Do not tell them the ratio of outcomes. The surprise is the lesson.
+      Tell them three things and nothing more. They are the judge, not the defendant. They will
+      have to name the Scripture their ruling rests on, so a hunch will not get them through. And
+      naming the right verse is only half of it: they then have to say what it means, and the wrong
+      readings on offer are all ones real people actually hold. Do not tell them the ratio of
+      outcomes. The surprise is the lesson.
     </p>
     <p style="color:var(--muted);max-width:44em;font-size:15px">
-      Roughly 30 to 40 minutes for all eleven cases. Progress saves in the browser, so a
-      student who runs out of time can finish later on the same device. The verdict record
-      prints or saves as a PDF for submission.
+      Budget 50 to 70 minutes for all eleven cases. Each one takes five decisions: the verdict,
+      the station, which texts apply, and then a reading for every text selected. Progress saves
+      in the browser, so a student who runs out of time picks up on the same device. The verdict
+      record prints or saves as a PDF for submission. If you only have one period, cases 1 through
+      6 are a complete arc on their own and end on the Social and Charity contrast.
     </p>
 
     <hr class="rule">
@@ -88,7 +92,7 @@
     <div class="table-scroll">
       <table class="key-table">
         <thead><tr>
-          <th>Citizen</th><th>Verdict</th><th>Station or measure</th><th>Governing text</th><th>New name</th>
+          <th>Citizen</th><th>Verdict</th><th>Station or measure</th><th>New name</th><th>Texts Jalyn used</th><th>The trap text</th>
         </tr></thead>
         <tbody id="keyRows"></tbody>
       </table>
@@ -135,6 +139,17 @@
         criterion appears.</p>
       </div>
     </div>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.7rem">The trap text on every case</h3>
+    <p style="color:var(--parchment-2);max-width:44em;margin-top:-4px">
+      Each case offers five texts. The ones Jalyn used are listed above. Each pool also carries
+      exactly one text he did <em>not</em> use, chosen because it is the verse students actually
+      reach for when they get the case wrong. These are generated from the same file the activity
+      runs on, so they cannot drift out of sync.
+    </p>
+    <div id="trapRows" style="margin-top:22px"></div>
 
     <hr class="rule">
 
@@ -185,35 +200,42 @@
 </footer>
 
 <script src="assets/data.js"></script>
+<script src="assets/cases.js"></script>
 <script>
 (function () {
   const NEWNAME = {
-    independent: "—",
-    reconciled:  "Reconciled",
-    deceived:    "—",
-    patient:     "Patient",
-    faintheart:  "—",
-    content:     "Content",
-    humbled:     "Humbled",
-    doublelife:  "—",
-    evangelist:  "Evangelist",
-    selfish:     "Unpretentious",
-    charity:     "Cherished Overcomer"
+    independent: "\u2014", reconciled: "Reconciled", deceived: "\u2014",
+    patient: "Patient", faintheart: "\u2014", content: "Content",
+    humbled: "Humbled", doublelife: "\u2014", evangelist: "Evangelist",
+    selfish: "Unpretentious", charity: "Cherished Overcomer"
   };
 
   document.getElementById("keyRows").innerHTML = CASES.map((c, i) => {
     const affabel = c.verdict === "affabel";
     const na = c.measure === "unspecified";
     const station = na
-      ? '<span style="color:var(--faint)">not stated in the parable</span>'
+      ? '<span style="color:var(--faint)">not stated</span>'
       : (affabel ? STATIONS[c.measure].label : MEASURES[c.measure].label);
+    const cited = c.texts.filter(t => t.cited).map(t => VERSES[t.v].ref).join("<br>");
+    const trap = c.texts.filter(t => !t.cited).map(t => VERSES[t.v].ref).join("<br>");
     return `<tr>
       <td>${String(i + 1).padStart(2, "0")} &nbsp; ${c.name}</td>
       <td><span class="pill ${affabel ? "pill-a" : "pill-l"}">${affabel ? "Affabel" : "Lone"}</span></td>
       <td>${station}</td>
-      <td>${VERSES[c.verse].ref}</td>
-      <td>${NEWNAME[c.id] || "—"}</td>
+      <td>${NEWNAME[c.id] || "\u2014"}</td>
+      <td style="font-size:13px">${cited}</td>
+      <td style="font-size:13px;color:var(--lone-lit)">${trap}</td>
     </tr>`;
+  }).join("");
+
+  /* The misreadings, gathered per case. This is the part worth reading before class. */
+  document.getElementById("trapRows").innerHTML = CASES.map((c, i) => {
+    const t = c.texts.find(x => !x.cited);
+    if (!t) return "";
+    return `<div class="pair">
+      <h4>${String(i + 1).padStart(2, "0")} &nbsp; ${c.name} &nbsp;\u00b7&nbsp; ${VERSES[t.v].ref}</h4>
+      <p>${t.note}</p>
+    </div>`;
   }).join("");
 })();
 </script>

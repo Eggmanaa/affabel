@@ -214,11 +214,28 @@
       <div class="choices" id="measureChoices"></div>
     </div>
 
-    <!-- scripture -->
-    <div class="phase" id="phaseVerse" hidden>
+    <!-- select the texts -->
+    <div class="phase" id="phaseTexts" hidden>
       <div class="phase-label"><span class="n">V</span><h3>Ground your judgment</h3></div>
-      <p class="your-call">Which text does your ruling rest on?</p>
-      <div class="choices" id="verseChoices"></div>
+      <p class="your-call">Select every text your ruling rests on. There may be one. There may be several.</p>
+      <p class="phase-hint">All five are genuinely in play for this case. Some of them Jalyn used. Some are the ones people reach for and get wrong.</p>
+      <div class="choices" id="textChoices"></div>
+      <div class="phase-foot">
+        <span class="progress-text" id="textCount">None selected</span>
+        <button class="btn btn-solid" id="lockTextsBtn" disabled>Lock these texts</button>
+      </div>
+    </div>
+
+    <!-- justify each text -->
+    <div class="phase" id="phaseReading" hidden>
+      <div class="phase-label"><span class="n">VI</span><h3>Explain the reading</h3></div>
+      <p class="your-call">For each text you selected, say how it justifies the ruling you just gave.</p>
+      <p class="phase-hint">Naming the right verse is not the same as reading it correctly. This is the part Jalyn actually argues with people about.</p>
+      <div id="readingChoices"></div>
+      <div class="phase-foot">
+        <span class="progress-text" id="readingProgress"></span>
+        <button class="btn btn-solid" id="deliverBtn" disabled>Deliver the judgment</button>
+      </div>
     </div>
 
     <!-- ruling -->
@@ -229,7 +246,7 @@
 
     <div class="btn-row" id="caseNav" hidden style="margin-top:34px;justify-content:center">
       <button class="btn btn-solid" id="nextCaseBtn"></button>
-      <button class="btn btn-ghost" onclick="document.getElementById('backToDocket').click()">Return to docket</button>
+      <button class="btn btn-ghost" id="returnBtn">Return to docket</button>
     </div>
 
     <div style="height:70px"></div>
@@ -256,7 +273,9 @@
     <div class="tally">
       <div class="tally-cell"><div class="tally-num" id="tallyVerdict"></div><div class="tally-lab">Verdicts matched</div></div>
       <div class="tally-cell"><div class="tally-num" id="tallyStation"></div><div class="tally-lab">Stations matched</div></div>
-      <div class="tally-cell"><div class="tally-num" id="tallyVerse"></div><div class="tally-lab">Texts matched</div></div>
+      <div class="tally-cell"><div class="tally-num" id="tallyTexts"></div><div class="tally-lab">Texts Jalyn used, found</div></div>
+      <div class="tally-cell"><div class="tally-num" id="tallyReason"></div><div class="tally-lab">Read as Jalyn read them</div></div>
+      <div class="tally-cell"><div class="tally-num" id="tallyWrongTexts"></div><div class="tally-lab">Texts cited he did not use</div></div>
       <div class="tally-cell"><div class="tally-num" id="tallyHarsh"></div><div class="tally-lab">Harsher than Jalyn</div></div>
       <div class="tally-cell"><div class="tally-num" id="tallySoft"></div><div class="tally-lab">Gentler than Jalyn</div></div>
     </div>
@@ -268,7 +287,7 @@
     <div class="table-scroll">
       <table class="record-table">
         <thead><tr>
-          <th>Citizen</th><th>Your ruling</th><th>Verdict</th><th>Station</th><th>Text</th>
+          <th>Citizen</th><th>Your ruling</th><th>Verdict</th><th>Station</th><th>Texts found</th><th>Reasoning</th>
         </tr></thead>
         <tbody id="recordRows"></tbody>
       </table>
@@ -306,6 +325,7 @@
 </footer>
 
 <script src="assets/data.js"></script>
+<script src="assets/cases.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
