@@ -93,17 +93,26 @@ h1, h2, h3, .display { font-family: var(--serif); font-weight: 300; letter-spaci
 
 /* ---------- title screen ---------- */
 
-#title { min-height: 100vh; display: grid; place-items: center; text-align: center; }
+/* #title needs display:grid, but an ID selector outranks .screen{display:none},
+   so the grid must be scoped to the active state or the title never hides. */
+#title { min-height: 100vh; place-items: center; text-align: center; }
+#title.active { display: grid; }
 
 .hero-art {
   position: fixed;
   inset: 0;
   z-index: -1;
+  opacity: 0;
+  transition: opacity .6s ease;
+  pointer-events: none;
   background-size: cover;
   background-position: center 40%;
-  opacity: .32;
-  filter: saturate(.8) contrast(1.05);
+  filter: saturate(.85) contrast(1.05);
 }
+
+/* The hero painting belongs to the title screen only. Everywhere else it
+   muddies the text it sits behind. */
+body.on-title .hero-art { opacity: .46; }
 
 .hero-art::after {
   content: "";

@@ -38,6 +38,7 @@ function esc(s) {
 
 function show(id) {
   $$(".screen").forEach(s => s.classList.toggle("active", s.id === id));
+  document.body.classList.toggle("on-title", id === "title");
   window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
 }
 
