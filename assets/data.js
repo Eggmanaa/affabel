@@ -16,15 +16,22 @@ function wmOriginal(path, file) {
 }
 
 const ART = {
-  /* The title screen. Van der Weyden's Beaune polyptych is the one Last Judgment
-     by a master that is already composed as a wide band with the enthroned Judge
-     dead centre, which is what a full-bleed header needs. Alternatives are on
-     /hero-options.html; swapping one in is a two-line edit here. */
+  /* The title screen. Vasnetsov's Christ sits enthroned across roughly the top
+     third of a square canvas, with the fires of the lower half well beneath. The
+     size below zooms onto that top third and the max() keeps it covering on a
+     short wide window, where a plain 300vh would leave a gap at the edges.
+     Alternatives are mocked up on /hero-options.html. */
   hero: {
+    src: wm("5/58", "Vasnetsov_Last_Judgment.jpg", 1280),
+    credit: "Viktor Vasnetsov, The Last Judgment, 1904",
+    size: "max(100vw, 300vh) max(100vw, 300vh)",
+    focus: "center 5%"
+  },
+
+  /* previously on the title screen, kept as a one-line swap */
+  beaune: {
     src: wm("4/4a", "Rogier_van_der_Weyden_-_The_Last_Judgment_Polyptych_-_WGA25625.jpg", 1280),
     credit: "Rogier van der Weyden, The Last Judgment (Beaune Altarpiece), c. 1450",
-    /* zoomed past the outer panels onto the centre one, so the enthroned Christ
-       sits directly behind the title instead of the frame lines */
     size: "auto 210%",
     focus: "center 9%"
   },
