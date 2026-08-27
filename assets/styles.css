@@ -462,10 +462,11 @@ input[type="text"]:focus { outline: none; border-color: var(--gold); }
 
 /* ---------- record ---------- */
 
-.tally { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 40px 0; }
+.tally { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); margin: 40px 0; }
 .tally-cell { border: 1px solid var(--edge); border-radius: 3px; padding: 24px 20px; text-align: center; background: var(--panel); }
 .tally-num { font-family: var(--serif); font-size: 3.2rem; line-height: 1; color: var(--gold-lit); }
 .tally-lab { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
+.tally-sub { font-size: 11px; color: var(--faint); margin-top: 7px; line-height: 1.4; }
 
 .record-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
 .record-table th {

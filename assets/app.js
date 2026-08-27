@@ -513,7 +513,9 @@ function renderRecord() {
   $("#tallyReason").textContent = rScored ? `${rSound}/${rScored}` : "—";
   $("#tallyHarsh").textContent = harsher;
   $("#tallySoft").textContent = softer;
-  $("#tallyWrongTexts").textContent = tWrong;
+  $("#tallyWrongTexts").textContent = tWrong
+    ? `plus ${tWrong} he did not use`
+    : "none cited that he did not use";
 
   $("#recordRows").innerHTML = rows.join("");
 
