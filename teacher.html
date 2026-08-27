@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teacher Key · The Judgment Seat of Affabel</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9878;</text></svg>">
+<style>
+  .screen { display: block; }
+  .key-table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 14px; }
+  .key-table th { text-align: left; font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--gold-dim); font-weight: 600; padding: 10px 12px; border-bottom: 1px solid var(--edge-2); }
+  .key-table td { padding: 12px; border-bottom: 1px solid var(--edge); color: var(--parchment-2); vertical-align: top; }
+  .key-table td:first-child { font-family: var(--serif); font-size: 1.15rem; color: var(--parchment); white-space: nowrap; }
+  .pill { display: inline-block; font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+    padding: 3px 9px; border-radius: 100px; border: 1px solid var(--edge-2); }
+  .pill-a { border-color: rgba(127,179,200,.55); color: var(--affabel-lit); }
+  .pill-l { border-color: rgba(180,68,46,.6); color: var(--lone-lit); }
+  .pair { border: 1px solid var(--edge); border-left: 2px solid var(--gold-dim); border-radius: 3px;
+    padding: 20px 24px; margin-bottom: 14px; background: var(--ink-2); }
+  .pair h4 { font-family: var(--serif); font-weight: 400; font-size: 1.4rem; margin: 0 0 8px; color: var(--gold-lit); }
+  .pair p { margin: 0; color: var(--parchment-2); font-size: 15px; }
+  .qlist { list-style: none; padding: 0; margin: 16px 0 0; counter-reset: q; }
+  .qlist li { counter-increment: q; padding: 14px 0 14px 44px; border-top: 1px solid var(--edge);
+    position: relative; font-family: var(--serif); font-size: 1.2rem; color: var(--parchment); }
+  .qlist li::before { content: counter(q); position: absolute; left: 0; top: 15px;
+    width: 26px; height: 26px; border: 1px solid var(--gold-dim); border-radius: 50%;
+    display: grid; place-items: center; font-family: var(--sans); font-size: 11px; color: var(--gold); }
+  @media print {
+    .screen { display: block !important; }
+    .pair, .key-table td, .key-table th, .qlist li { border-color: #999 !important; background: #fff !important; }
+    .pair h4, .key-table td:first-child, .qlist li, h2, h3 { color: #000 !important; }
+    .pill-a, .pill-l { color: #000 !important; }
+  }
+</style>
+</head>
+<body>
+
+<section class="screen active">
+  <div class="topbar"><div class="wrap">
+    <span class="topbar-title">Teacher key &nbsp;·&nbsp; <b>The Judgment Seat of Affabel</b></span>
+    <div class="btn-row">
+      <a class="btn btn-ghost" href="index.html">Open the activity</a>
+      <button class="btn btn-ghost" onclick="window.print()">Print</button>
+    </div>
+  </div></div>
+
+  <div class="wrap pad">
+
+    <div class="section-head">
+      <span class="eyebrow">Theology 11 &nbsp;·&nbsp; Bishop García Diego</span>
+      <h2>Running the activity</h2>
+    </div>
+
+    <p class="lede">
+      Students sit on Jalyn's throne and rule on eleven citizens of Endel. The docket is
+      shuffled on purpose. Seven end in Affabel and four in Lone, which breaks the pattern
+      most students form after the first three cases.
+    </p>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.7rem">Before they start</h3>
+    <p style="color:var(--parchment-2);max-width:44em">
+      Tell them two things and nothing more. First, they are the judge, not the defendant.
+      Second, they will be asked to name the Scripture their ruling rests on, so a hunch is
+      not going to be enough. Do not tell them the ratio of outcomes. The surprise is the lesson.
+    </p>
+    <p style="color:var(--muted);max-width:44em;font-size:15px">
+      Roughly 30 to 40 minutes for all eleven cases. Progress saves in the browser, so a
+      student who runs out of time can finish later on the same device. The verdict record
+      prints or saves as a PDF for submission.
+    </p>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.7rem">Answer key</h3>
+    <p style="color:var(--muted);font-size:14px;margin-top:-6px">
+      Two stations are marked n/a: the parable states the verdict but never names the station.
+      Those cases are scored on the verdict alone.
+    </p>
+    <div class="table-scroll">
+      <table class="key-table">
+        <thead><tr>
+          <th>Citizen</th><th>Verdict</th><th>Station or measure</th><th>Governing text</th><th>New name</th>
+        </tr></thead>
+        <tbody id="keyRows"></tbody>
+      </table>
+    </div>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.7rem">The five contrasts</h3>
+    <p style="color:var(--parchment-2);max-width:44em;margin-top:-4px">
+      The docket order separates each pair so the second one lands after students have
+      already committed to a rule. These are where the discussion lives.
+    </p>
+
+    <div style="margin-top:24px">
+      <div class="pair">
+        <h4>Charity and Social &nbsp;·&nbsp; cases 6 and 11</h4>
+        <p>Two restaurant owners. Both generous, both publicly admired, both in Affabel. One is
+        governor of ten districts; the other is a plumber in the flatlands. Externally almost
+        identical. Ask the class to name what actually separated them, and do not accept
+        "one gave more" as the answer, because Social gave in public and often.</p>
+      </div>
+      <div class="pair">
+        <h4>Motivator and Double Life &nbsp;·&nbsp; cases 7 and 8</h4>
+        <p>Two teachers. Both damaged students, and Motivator's former students are in Lone
+        because of what he taught them. One is saved; one is in the deepest hole in the parable.
+        The difference is not the size of the damage. Push until someone names it.</p>
+      </div>
+      <div class="pair">
+        <h4>Patient and Selfish &nbsp;·&nbsp; cases 4 and 10</h4>
+        <p>The invisible secretary and the popular mayor. Ask what each of their performance
+        reviews would have said in Endel, then what changed between that review and this one.
+        Nothing about either life changed. Only the light it was read in.</p>
+      </div>
+      <div class="pair">
+        <h4>Ruthless and Faint Heart &nbsp;·&nbsp; cases 2 and 5</h4>
+        <p>Seven days of obedience against a lifetime of profession. Handle Faint Heart carefully:
+        she is a genuine victim and the parable says so. The question is not whether her wound
+        was real but what she did with it for the rest of her life.</p>
+      </div>
+      <div class="pair">
+        <h4>Brutal and Deceived &nbsp;·&nbsp; cases 3 and 9</h4>
+        <p>The abrasive convert everyone found tiresome, and the charming believer everyone
+        liked. Ask whether anyone docked Brutal for being annoying, and where in the Book that
+        criterion appears.</p>
+      </div>
+    </div>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.7rem">Discussion questions</h3>
+    <ol class="qlist">
+      <li>Jalyn tells Independent, "I am a merciful king, and that is exactly why I'm sending you away." What does he mean, and is it a fair use of the word mercy?</li>
+      <li>Deceived and Ruthless both had the Ezekiel passage read over them, and it acquitted one and convicted the other. What is the passage actually measuring?</li>
+      <li>Faint Heart says her heart hardened and "that wasn't my fault." Where in her story is the last point at which she could have chosen differently?</li>
+      <li>Social's deeds fed real people. Jalyn says he already received his reward. Does that make the meals worth less to the people who ate them?</li>
+      <li>Motivator never taught anything false. He only left things out. Is that a sin of commission or omission, and does the distinction survive James 3:1?</li>
+      <li>Selfish sentenced himself to Lone before Jalyn spoke, and he was wrong. Was he wrong about what he deserved, or only about what he would receive?</li>
+      <li>Patient's five thousand includes everyone Brutal reached. If your good is credited to whoever formed you, whose account are you currently adding to?</li>
+      <li>The record tells you whether you ruled harsher or gentler than Jalyn. Which way did you lean, and what does that reveal about the God you are picturing?</li>
+    </ol>
+
+    <hr class="rule">
+
+    <h3 style="font-size:1.7rem">A note on the harsh and gentle tally</h3>
+    <p style="color:var(--parchment-2);max-width:44em">
+      This is usually the most productive thing on the record page. Students who ruled
+      consistently harsher tend to be picturing a God who is looking for a reason to convict.
+      Students who ruled consistently gentler tend to be picturing one who does not really mean
+      the warnings. The parable refuses both. Consider collecting the tallies and putting the
+      class distribution on the board before you discuss anything else.
+    </p>
+
+    <div class="teachnote" style="margin-top:30px">
+      <span class="eyebrow">Catholic framing</span>
+      <p>The parable is Protestant in origin and its Hall of Justice and Hall of Life map loosely
+      onto particular judgment. Worth naming for students: the Catholic tradition holds the same
+      two things this activity is built on, that our works are judged (CCC 1021-1022, 2 Cor 5:10)
+      and that grace, not merit, is what saves (CCC 1996-2001, Eph 2:8-9). What the parable adds,
+      and what Trent and the Catechism both affirm, is that the reward of the saved genuinely
+      differs. Purgatory is the piece the allegory has no room for. That absence is worth
+      pointing out rather than papering over.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><a href="index.html">The Judgment Seat of Affabel</a> &nbsp;·&nbsp; teacher key.
+       Built on the parable of the Kingdom of Affabel from John Bevere, <em>Driven by Eternity</em>, chapters 2, 3 and 8.</p>
+    <p>Scripture: New American Bible, Revised Edition (NABRE), &copy; 2010, 1991, 1986, 1970
+       Confraternity of Christian Doctrine, Washington, D.C.</p>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script>
+(function () {
+  const NEWNAME = {
+    independent: "—",
+    reconciled:  "Reconciled",
+    deceived:    "—",
+    patient:     "Patient",
+    faintheart:  "—",
+    content:     "Content",
+    humbled:     "Humbled",
+    doublelife:  "—",
+    evangelist:  "Evangelist",
+    selfish:     "Unpretentious",
+    charity:     "Cherished Overcomer"
+  };
+
+  document.getElementById("keyRows").innerHTML = CASES.map((c, i) => {
+    const affabel = c.verdict === "affabel";
+    const na = c.measure === "unspecified";
+    const station = na
+      ? '<span style="color:var(--faint)">not stated in the parable</span>'
+      : (affabel ? STATIONS[c.measure].label : MEASURES[c.measure].label);
+    return `<tr>
+      <td>${String(i + 1).padStart(2, "0")} &nbsp; ${c.name}</td>
+      <td><span class="pill ${affabel ? "pill-a" : "pill-l"}">${affabel ? "Affabel" : "Lone"}</span></td>
+      <td>${station}</td>
+      <td>${VERSES[c.verse].ref}</td>
+      <td>${NEWNAME[c.id] || "—"}</td>
+    </tr>`;
+  }).join("");
+})();
+</script>
+</body>
+</html>

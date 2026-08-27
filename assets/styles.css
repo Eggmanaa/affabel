@@ -335,7 +335,7 @@ input[type="text"]:focus { outline: none; border-color: var(--gold); }
 .case-name { font-size: clamp(2.2rem, 6vw, 3.4rem); margin: 0; line-height: 1; }
 .case-trade { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-dim); margin-top: 8px; }
 
-.phase { margin-top: 44px; }
+.phase { margin-top: 44px; scroll-margin-top: 96px; }
 .phase[hidden] { display: none; }
 
 .phase-label { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
@@ -416,7 +416,7 @@ input[type="text"]:focus { outline: none; border-color: var(--gold); }
 
 /* ---------- ruling ---------- */
 
-.ruling { margin-top: 52px; border: 1px solid var(--gold-dim); border-radius: 3px; overflow: hidden; }
+.ruling { margin-top: 52px; scroll-margin-top: 96px; border: 1px solid var(--gold-dim); border-radius: 3px; overflow: hidden; }
 
 .ruling-banner { padding: 26px 30px; text-align: center; }
 .ruling-affabel { background: linear-gradient(180deg, rgba(127,179,200,.2), rgba(127,179,200,.05)); border-bottom: 1px solid rgba(127,179,200,.35); }
