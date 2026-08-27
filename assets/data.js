@@ -4,25 +4,32 @@
 
 const CDN = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
 
+/* Wikimedia only serves a fixed set of pre-rendered thumbnail widths for these
+   files. 960 and 1280 are reliable; other widths 404. Where the original is
+   already small enough, link the original file directly. */
 function wm(path, file, width) {
   return CDN + path + "/" + file + "/" + width + "px-" + file;
 }
 
+function wmOriginal(path, file) {
+  return "https://upload.wikimedia.org/wikipedia/commons/" + path + "/" + file;
+}
+
 const ART = {
   hero: {
-    src: wm("5/50", "John_Martin_-_The_Great_Day_of_His_Wrath_-_Google_Art_Project.jpg", 1600),
+    src: wm("5/50", "John_Martin_-_The_Great_Day_of_His_Wrath_-_Google_Art_Project.jpg", 1280),
     credit: "John Martin, The Great Day of His Wrath, 1851–53"
   },
   affabel: {
-    src: wm("7/79", "John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg", 1600),
+    src: wm("7/79", "John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg", 1280),
     credit: "John Martin, The Plains of Heaven, 1851–53"
   },
   lone: {
-    src: wm("e/e1", "John_Martin_-_Sodom_and_Gomorrah.jpg", 1600),
+    src: wm("e/e1", "John_Martin_-_Sodom_and_Gomorrah.jpg", 1280),
     credit: "John Martin, The Destruction of Sodom and Gomorrah, 1852"
   },
   throne: {
-    src: wm("d/d2", "Paradiso_Canto_31.jpg", 858),
+    src: wmOriginal("d/d2", "Paradiso_Canto_31.jpg"),
     credit: "Gustave Doré, The Empyrean, from Dante's Paradiso, 1868"
   },
   abyss: {
