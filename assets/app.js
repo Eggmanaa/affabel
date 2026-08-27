@@ -63,6 +63,7 @@ function shuffleStable(arr, seedStr) {
 
 function initTitle() {
   $("#heroArt").style.backgroundImage = `url("${ART.hero.src}")`;
+  if (ART.hero.size)  $("#heroArt").style.backgroundSize = ART.hero.size;
   if (ART.hero.focus) $("#heroArt").style.backgroundPosition = ART.hero.focus;
   $("#heroCredit").textContent = ART.hero.credit;
 

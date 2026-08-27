@@ -77,10 +77,10 @@
 
   const OPTIONS = [
     { key: "vandeweyden", current: true,
-      src: ART.hero.src, focus: ART.hero.focus,
+      src: ART.hero.src, focus: ART.hero.focus, size: ART.hero.size,
       title: "Rogier van der Weyden, The Last Judgment",
       sub: "Beaune Altarpiece, c. 1450",
-      note: "<b>Currently live.</b> The only one of these already composed as a wide band, which is what a full-bleed header actually needs. Christ sits enthroned on the rainbow dead centre, with Michael weighing souls directly beneath him. Nothing important gets cropped away." },
+      note: "<b>Currently live.</b> The only one of these already composed as a wide band, which is what a full-bleed header actually needs. Zoomed past the outer panels onto the centre one, so the enthroned Christ sits directly behind the title: the halo, the red robe, the rainbow, and the two angels carrying the cross and the column." },
     { key: "vasnetsov",
       src: wmx("5/58", "Vasnetsov_Last_Judgment.jpg", 1280), focus: "center 12%",
       title: "Viktor Vasnetsov, The Last Judgment",
@@ -105,7 +105,7 @@
         <span class="k">${o.current ? "live now &nbsp;·&nbsp; " : ""}${o.sub}</span>
       </div>
       <div class="mock">
-        <div class="art" style="background-image:url('${o.src}');background-position:${o.focus}"></div>
+        <div class="art" style="background-image:url('${o.src}');background-position:${o.focus};background-size:${o.size||"cover"}"></div>
         <div class="veil"></div>
         <div class="type">
           <div class="eyebrow2">The Kingdom of Affabel</div>
@@ -114,7 +114,7 @@
         </div>
       </div>
       <p class="opt-note">${o.note}
-        <span class="raw">focus: ${o.focus}</span>
+        <span class="raw">focus: ${o.focus}${o.size ? " &nbsp;·&nbsp; size: " + o.size : ""}</span>
       </p>
     </div>`).join("");
 })();

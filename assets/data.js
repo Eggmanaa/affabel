@@ -23,7 +23,10 @@ const ART = {
   hero: {
     src: wm("4/4a", "Rogier_van_der_Weyden_-_The_Last_Judgment_Polyptych_-_WGA25625.jpg", 1280),
     credit: "Rogier van der Weyden, The Last Judgment (Beaune Altarpiece), c. 1450",
-    focus: "center 30%"
+    /* zoomed past the outer panels onto the centre one, so the enthroned Christ
+       sits directly behind the title instead of the frame lines */
+    size: "auto 210%",
+    focus: "center 9%"
   },
 
   /* no longer on the title screen, kept because it is the companion panel to
