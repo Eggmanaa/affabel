@@ -63,7 +63,7 @@ const CASES = [
       just: [
         { t: "He asked for his ledger to be weighed. This is the answer that the ledger was never the standard, because one breach is enough.", sound: true },
         { t: "It proves his good deeds were worthless and helped nobody in Endel.", sound: false },
-        { t: "It makes everyone equally guilty, so his sentence should match Double Life's.", sound: false }
+        { t: "It makes everyone equally guilty, so every sentence handed down today should be identical.", sound: false }
       ]},
     { v: "eph2_8_9", cited: true,
       note: "Spoken by the underruler on the smaller throne, answering “How then can anyone be saved?”",
@@ -98,25 +98,25 @@ const CASES = [
   art: { src: wm("9/91", "Rembrandt_Harmensz._van_Rijn_-_The_Return_of_the_Prodigal_Son.jpg", 960),
          credit: "Rembrandt, The Return of the Prodigal Son, c. 1669" },
   approach: "He does not look like the others. He never went to school. He opposed you more openly than anyone in Endel, and everyone in the hall knows his name.",
-  intro: "A notorious wicked man. He never attended a single class, never heard the teachings, and opposed Jalyn more loudly than anyone Deceived had ever known. He oppressed people. He stole.",
+  intro: "A notorious wicked man. He never attended a single class, never heard the teachings, and opposed Jalyn more loudly than anyone else in the community. He oppressed people. He stole.",
   review: [
     "Never attended the School of Endel. Never heard Jalyn's word taught.",
     "Known throughout the community as a thief and an oppressor.",
     "Opposed Jalyn publicly and more fiercely than any other citizen.",
-    "One week before Judgment Day, he ate at Charity's restaurant. She paid for his dinner on the condition that he stay and talk. She spent two hours telling him about Jalyn.",
+    "One week before Judgment Day he ate at a restaurant in Endel. The owner paid for his dinner on one condition, that he stay and talk, and then spent two hours telling him about Jalyn.",
     "He hated who he was and what he had done. He pledged the rest of his life to Jalyn's lordship.",
     "In the seven days remaining he went to everyone he had oppressed or stolen from, asked their forgiveness, and gave back more than he had taken."
   ],
   says: [
     "I was known as Ruthless. Anyone in Endel could tell you what that meant.",
     "I never attended a single class. I never heard his word taught until seven days ago.",
-    "A woman paid for my dinner and would not let me leave until I had heard about him. I had two hours.",
+    "Someone paid for my dinner and would not let me leave until I had heard about him. I had two hours.",
     "I hated who I was and what I did.",
     "I went back to everyone I had oppressed or stolen from. I gave back more than I took."
   ],
   response: [
     "I was once known as Ruthless, but Lord Jalyn changed my name at his Judgment Seat to Reconciled.",
-    "She explained it was not too late for me to give my life to this great leader.",
+    "She explained it was not too late for me to give my life to this great leader. I had assumed it was.",
     "Though I was only able to serve him for a week in Endel, I did so with all my heart.",
     "I'm one who was shown possibly the greatest mercy before our king."
   ],
@@ -240,22 +240,22 @@ const CASES = [
   hall: "life",
   art: { src: wm("d/d7", "Meisje_met_de_parel.jpg", 960),
          credit: "Johannes Vermeer, Girl with a Pearl Earring, c. 1665" },
-  approach: "She graduated a year ahead of Selfish. He barely knew her. She was quiet, reserved, and never stood out in anything.",
-  intro: "A secretary. No title, no platform, no public role in the community. Selfish, who was mayor, would later blurt out to her face: 'You never did anything in Endel.'",
+  approach: "She graduated a year ahead of most of this cohort and almost nobody here knows her. She was quiet, reserved, and never once stood out in anything.",
+  intro: "A secretary. No title, no platform, no public role of any kind in the community. Anyone asked to summarise her contribution to Endel would have struggled to name one.",
   review: [
     "Worked as a secretary to one of the city council members. Held no leadership role in the community.",
     "Gave cheerfully to the School of Endel, both financially and through service.",
     "Treated everyone kindly out of a pure heart of love. Generous to those in need.",
     "Resolute in her stance for truth, in a community where that cost something.",
-    "Led a man named Brutal to Jalyn's service. He went on to influence more than a thousand lives."
+    "Led one man to Jalyn's service. He went on to influence more than a thousand lives himself."
   ],
   says: [
     "I worked as a secretary to one of the city council members. I held no office.",
     "I gave to the school, and I served there when I could.",
     "I tried to be kind to people. I do not know what else to tell you.",
-    "There was a man named Brutal. I talked to him about the king."
+    "There was a man nobody else would talk to. I talked to him about the king."
   ],
-  saysNote: "Composed from the record. The parable narrates her judgment only through what she says to Selfish afterward.",
+  saysNote: "Composed from the record. The parable narrates her judgment only in retrospect, through what she says to a citizen afterward.",
   response: [
     "Deception cannot hide within this hall or the great city.",
     "In Endel, you were concerned with both image and reputation. This trains many to speak deceptively while unaware of their folly.",
@@ -263,7 +263,7 @@ const CASES = [
     "My dear brother, you will receive a just reward for your life in Endel."
   ],
   verdict: "affabel", measure: "throne",
-  ruling: "She sits on one of the thrones. She is an underruler in Affabel, and Jalyn sends her to meet Selfish before he reaches the throne.",
+  ruling: "She sits on one of the thrones. She is an underruler in Affabel, and Jalyn has her speak to citizens on his behalf before they reach the throne.",
   reason: "Jalyn explained her total by the multiplication principle. Everyone the school served was credited to her because she funded and served the school. Every life reached by the man she brought to Jalyn's service was credited to her as well, because she reached him first. Nothing she did looked like much on the day she did it.",
   revealed: [
     "Jalyn asked an underruler how many citizens Patient had influenced for the kingdom. The answer was just over five thousand."
@@ -316,23 +316,23 @@ const CASES = [
     "Outstanding student. Constant volunteer work, extra study, class leadership. All of it real.",
     "A friend named Slander told the headmaster she had slept with a male student. It was an outright lie. She was innocent.",
     "She got the job anyway. She never let the offense go. She vowed to make Slander pay.",
-    "Her supervising teacher, Double Life, pursued her for weeks. She resisted, then relented, and they began an affair.",
+    "Her supervising teacher, one of the most gifted men in the school, pursued her for weeks. She resisted, then relented, and they began an affair.",
     "After four months he discarded her. She resigned, opened a salon, and stopped attending the weekly gatherings.",
-    "She never repented of the affair. She held herself the victim and laid the whole weight on Slander and Double Life.",
+    "She never repented of the affair. She held herself the victim and laid the whole weight on Slander and on the teacher.",
     "In her heart she blamed Jalyn for allowing a corrupt man to teach in his school. Asked directly, she would still confess allegiance to him.",
     "She spent the rest of her days trying to get even with the people who had hurt her."
   ],
   says: [
     "I spoke up in every class. I organized the students. I had some of the best grades in my year.",
     "Anyone who assessed our class would have named me the most passionate for his cause.",
-    "What was done to me was done by Slander and by Double Life. I was the one who was wronged.",
+    "What was done to me was done by Slander and by that teacher. I was the one who was wronged.",
     "I expect a scolding. I do not expect more than that."
   ],
   saysNote: "Drawn from her record and from her state of mind entering the hall, which the parable describes directly.",
   response: [
     "Jalyn, did you say I am to be taken to the dreaded land of Lone?",
     "How can this be, lord Jalyn? I believe in you. This was clearly shown in my life review.",
-    "I know my heart became hardened and the love within me died, but that wasn't my fault. It was the fault of Slander and Double Life. They caused me to grow cold.",
+    "I know my heart became hardened and the love within me died, but that wasn't my fault. It was the fault of Slander and of that teacher. They caused me to grow cold.",
     "But what about all the good I did?",
     "You said if I confessed you as my Savior my name would be written in the Book of Life. Why can't your scribe find my name? How could it have been erased?"
   ],
@@ -388,7 +388,7 @@ const CASES = [
   hall: "life",
   art: { src: wm("6/64", "Massysm_Quentin_%E2%80%94_The_Moneylender_and_his_Wife_%E2%80%94_1514.jpg", 960),
          credit: "Quentin Matsys, The Moneylender and His Wife, 1514" },
-  approach: "Selfish recognized him at once. An old friend, a man whose restaurant he ate at constantly, one of the most generous citizens in Endel.",
+  approach: "An old friend to half of Endel. His restaurant was the one everybody ate at, and his name came up whenever the community needed something paid for.",
   intro: "He owned a well-regarded restaurant. He sponsored community events, contributed money and free meals to fundraising campaigns, and gave up whole evenings of revenue to do it. Ask anyone in Endel and they would tell you he was a good man.",
   review: [
     "Ran one of the best restaurants in Endel. Sponsored numerous community events.",
@@ -404,7 +404,7 @@ const CASES = [
     "I contributed to the School of Endel every year.",
     "Ask anyone in that community what kind of man I was."
   ],
-  saysNote: "Composed from the record. He tells Selfish the truth about his motives only after his own judgment.",
+  saysNote: "Composed from the record. He tells the truth about his own motives only after his judgment, and not before.",
   response: [
     "I did those things to gain recognition and acceptance. I also knew it would draw more patrons. My motive was not to bless but to insure my success.",
     "I actually only gave a small percentage. I hoarded much of the profits because I was afraid of failing.",
@@ -463,7 +463,7 @@ const CASES = [
   hall: "life",
   art: { src: wm("d/d6", "Pieter_Bruegel_the_Elder_-_The_Parable_of_the_Blind_Leading_the_Blind_-_WGA3511.jpg", 960),
          credit: "Pieter Bruegel the Elder, The Parable of the Blind, 1568" },
-  approach: "Selfish's favorite teacher, by a wide margin. Informative, articulate, inspiring. Students left his class feeling good about themselves, which was not always true of the others.",
+  approach: "By common account the most admired teacher in the School of Endel. Informative, articulate, inspiring. Students left his classroom feeling good about themselves, which was not always true of the others.",
   intro: "A gifted and beloved instructor of Jalyn's ways. He taught the principles faithfully. He simply never taught the warnings.",
   review: [
     "One of the most admired teachers at the School of Endel. Genuinely gifted.",
@@ -480,7 +480,7 @@ const CASES = [
     "The other teachers were uplifting too, but they could be stern, and their words brought painful conviction. Mine did not.",
     "I never told a student anything that was untrue."
   ],
-  saysNote: "Composed from the record and from Selfish's memory of his classroom. His confession comes only after his judgment.",
+  saysNote: "Composed from the record and from how his former students remembered his classroom. His own confession comes only after his judgment.",
   response: [
     "I failed as a teacher in so many ways. First, my teachings were unbalanced. I emphasized only the positive aspects of serving Jalyn.",
     "I didn't give the students what they needed. I gave them what they wanted. I didn't want to lose their acceptance or my popularity.",
@@ -520,7 +520,7 @@ const CASES = [
       just: [
         { t: "He knew the charge to preach the whole counsel and did not do it. Much was entrusted to him and much was required.", sound: true },
         { t: "He did not know what he was doing wrong, so he is beaten only lightly.", sound: false },
-        { t: "It proves his punishment must equal Double Life's.", sound: false }
+        { t: "It proves that every teacher who fails his students must receive an identical sentence.", sound: false }
       ]},
     { v: "mt18_6", cited: false,
       note: "This is the reasoning most students use to send him to Lone, and Jalyn did not use it. The millstone is spoken over someone who causes a little one to sin. Motivator's students were failed, flattered and left unwarned, which is a grave thing and a different thing. The parable is careful about that distinction even when it is painful, and so is the text.",
@@ -615,14 +615,14 @@ const CASES = [
   hall: "life",
   art: { src: wm("4/4d", "Saint_Jerome_Writing-Caravaggio_%281605-6%29.jpg", 960),
          credit: "Caravaggio, Saint Jerome Writing, c. 1605" },
-  approach: "Selfish knew him and disliked him. After his conversion he was, in Selfish's judgment, far too zealous about the whole thing.",
+  approach: "The men of standing in Endel knew him and disliked him. After his conversion he was, in their judgment, far too zealous about the whole business.",
   intro: "A convert who would not shut up about it. He wrote a column in the community newspaper and used it to call out the citizens' lack of commitment to the kingdom. People found him abrasive.",
   review: [
     "Came to Jalyn's service through Patient, the council secretary.",
     "Wrote for the community newspaper and repeatedly used his column to name the citizens' lack of commitment toward the kingdom.",
     "Rallied Endelites to phone and email council members supporting the school's expansion.",
-    "Made his displeasure public when Selfish swayed the vote and denied the school its land.",
-    "Widely regarded as too zealous. Selfish disliked him for it."
+    "Made his displeasure public when the mayor swayed a council vote and denied the school the land it needed.",
+    "Widely regarded as too zealous. The men of standing in Endel disliked him for it."
   ],
   says: [
     "I wrote a column in the community paper and I used it to say what nobody wanted said.",
@@ -630,7 +630,7 @@ const CASES = [
     "When the mayor swayed the vote and denied the school its land, I made my displeasure public.",
     "People found me difficult. I am aware of that."
   ],
-  saysNote: "Composed from the record. He is still waiting in the other hall when Jalyn speaks about him, so the parable gives him no plea.",
+  saysNote: "Composed from the record. He has not yet been called when Jalyn speaks about him, so the parable gives him no plea of his own.",
   response: [
     "Jalyn: 'He will be renamed Evangelist because he became a great communicator of my ways.'",
     "Jalyn: 'He personally influenced over a thousand lives for the kingdom.'",
@@ -650,7 +650,7 @@ const CASES = [
       just: [
         { t: "Endel judged him by how he came across. Jalyn looked into the heart and found a great communicator of his ways.", sound: true },
         { t: "It means appearance never matters at all in how we treat one another.", sound: false },
-        { t: "It means Selfish was right to dislike him but wrong to say so out loud.", sound: false }
+        { t: "It means those who disliked him were right to, and only wrong to say so out loud.", sound: false }
       ]},
     { v: "mt25_21", cited: true,
       note: "He had a short window between his conversion and the judgment, and he spent all of it. The wage attaches to the faithfulness, not the length of service.",
