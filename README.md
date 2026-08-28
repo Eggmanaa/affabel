@@ -78,8 +78,13 @@ The deliberate contrasts:
 ## Catholic apparatus
 
 The parable is Protestant in origin, so every ruling is followed by the Church's own words on
-the same question, quoted verbatim from the Catechism of the Catholic Church as published by the
-Holy See. Twenty-three paragraphs, mapped to the cases they bear on.
+the same question, quoted verbatim from the Catechism of the Catholic Church.
+
+**Provenance.** All thirty-four paragraphs were read off the Holy See's own English text, the
+IntraText edition at `vatican.va/archive/ENG0015/`. None is quoted from memory. Two typographic
+repairs were made and nothing else: the Vatican HTML renders some sentence-initial "The" in lower
+case, which is restored, and footnote markers are dropped. Entries flagged `excerpt` are the
+opening of a longer paragraph whose closing block quotation is omitted; every other entry is whole.
 
 The three places where the allegory and the Catechism genuinely diverge are named rather than
 smoothed over:
@@ -88,8 +93,8 @@ smoothed over:
   city rather than a purification. Surfaces on Motivator and Selfish.
 - **Those who never heard.** Endel has no category for the person who never had a real chance;
   CCC 847 and Lumen Gentium 16 do.
-- **Merit and grace.** The Hall of Life runs on merit; CCC 1996-2011 explains how that squares
-  with salvation as gift.
+Scandal (2284-2287), merit and grace (1996-2011), invincible ignorance (847) and forgiveness
+(2840-2843) are all quoted in full, on the cases they bear on and on the doctrine page.
 
 Gathered on one printable page at `catechism.html`.
 

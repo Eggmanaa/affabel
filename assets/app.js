@@ -492,6 +492,9 @@ function cccPanel(c) {
     ${a.tension ? `<div class="ccc-tension">
       <span class="eyebrow">Where the parable and the Catechism part ways</span>
       <p>${esc(a.tension)}</p>
+      ${(a.tensionCites || []).map(n => CCC[n] ? `<div class="ccc-para" style="margin-top:14px">
+        <div class="ccc-ref">Catechism ${esc(n)}</div>
+        <p>${esc(CCC[n].text)}</p></div>` : "").join("")}
     </div>` : ""}
   </div>`;
 }
