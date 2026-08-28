@@ -65,13 +65,6 @@ const CASES = [
         { t: "It proves his good deeds were worthless and helped nobody in Endel.", sound: false },
         { t: "It makes everyone equally guilty, so every sentence handed down today should be identical.", sound: false }
       ]},
-    { v: "eph2_8_9", cited: true,
-      note: "Spoken by the underruler on the smaller throne, answering “How then can anyone be saved?”",
-      just: [
-        { t: "Salvation was a gift held out to him and he declined it. He is not condemned for failing to earn what was free.", sound: true },
-        { t: "Because it is a gift, it is given to everyone whether they want it or not.", sound: false },
-        { t: "Because works cannot save, works carry no weight anywhere in judgment.", sound: false }
-      ]},
     { v: "acts4_12", cited: true,
       note: "Jalyn's answer immediately after John 8:24, and part of the same sentence: his teachers had taught that there is salvation in no one else, and no other name given by which anyone is saved.",
       just: [
@@ -134,7 +127,7 @@ const CASES = [
         { t: "He was spared because his restitution repaid what he had stolen.", sound: false }
       ]},
     { v: "eph2_8_9", cited: true,
-      note: "The same text the underruler read over Independent, who refused the gift. Reconciled had seven days. Nothing about that week could have purchased a kingdom.",
+      note: "Salvation is a gift, not a wage. Reconciled had seven days. Nothing about that week could have purchased a kingdom, and nothing about it needed to.",
       just: [
         { t: "Seven days could not earn a kingdom. What he received was a gift, and that is the only reason a week was enough.", sound: true },
         { t: "His good works in that final week were enough to qualify him.", sound: false },
@@ -214,13 +207,6 @@ const CASES = [
         { t: "He asked to be saved on faith alone. This is the text that says a faith producing nothing had already died.", sound: true },
         { t: "It proves faith is worthless and that only works matter.", sound: false },
         { t: "He did have works, they were simply bad ones, so the text does not apply.", sound: false }
-      ]},
-    { v: "ps50_16_21", cited: true,
-      note: "Jalyn quoted this at the point where Deceived listed his service: “Recite my laws no longer and stop claiming my promises, for you have refused my discipline.”",
-      just: [
-        { t: "He recited the laws and professed the covenant while casting the words behind him. The silence he mistook for approval was patience.", sound: true },
-        { t: "God accused him because he had been reciting the commandments incorrectly.", sound: false },
-        { t: "The text condemns anyone who quotes Scripture in public.", sound: false }
       ]},
     { v: "eph2_8_9", cited: false,
       note: "This is Deceived's own argument, nearly word for word. Jalyn never disputed the text. He disputed whether Deceived possessed the faith it describes. Note that the very same verse had already worked in a man's favour earlier that morning: Ruthless could not have earned anything in seven days, and did not need to.",
@@ -356,13 +342,6 @@ const CASES = [
         { t: "Her early righteousness should have been enough to cover her later sin.", sound: false },
         { t: "It shows that God forgets good deeds arbitrarily.", sound: false }
       ]},
-    { v: "pt2_2_20_21", cited: true,
-      note: "Jalyn read this when she claimed salvation could never be lost. It says the second condition is worse than the first, which presumes there was a first.",
-      just: [
-        { t: "She had escaped and became entangled again. The text says that state is worse than never having known, which is why her knowledge made the case heavier.", sound: true },
-        { t: "It means she was never genuinely saved to begin with.", sound: false },
-        { t: "It condemns anyone who sins at all after conversion.", sound: false }
-      ]},
     { v: "rev3_5", cited: true,
       note: "Her last argument was that a name in the Book of Life cannot be erased. Jalyn answered from this verse: promising never to erase it presumes erasure is possible.",
       just: [
@@ -438,13 +417,6 @@ const CASES = [
         { t: "He was saved through fire, meaning he barely escaped being condemned.", sound: false },
         { t: "The fire destroyed him along with his works.", sound: false }
       ]},
-    { v: "cor1_4_5", cited: true,
-      note: "Endel praised him and could not see why he did any of it. This is the text about the appointed time when the motives under the deeds are brought into the light.",
-      just: [
-        { t: "Endel praised him and could not see why he did any of it. This is the text that says the motives get brought to light before the praise is assigned.", sound: true },
-        { t: "It forbids us from ever evaluating anyone's actions at all.", sound: false },
-        { t: "His hidden motives were secret sins that nobody in Endel knew about.", sound: false }
-      ]},
     { v: "mt25_34_40", cited: false,
       note: "His deeds match this text almost line for line: he fed people, he welcomed people, he gave. What the text describes, though, is service rendered to the King without knowing it, discovered only when he names it. Social knew exactly what he was doing and exactly why, and said so himself. The deeds match; the astonishment does not.",
       just: [
@@ -515,13 +487,6 @@ const CASES = [
         { t: "It means teachers are always condemned in the end.", sound: false },
         { t: "It means he should never have taught in the first place.", sound: false }
       ]},
-    { v: "lk12_47_48", cited: true,
-      note: "He knew the charge he had been given, which was to preach the whole counsel, and he did not carry it out. Much was entrusted to him and much was required. Notice that the same text can grade a punishment as well as a loss, depending on which side of the verdict the servant falls.",
-      just: [
-        { t: "He knew the charge to preach the whole counsel and did not do it. Much was entrusted to him and much was required.", sound: true },
-        { t: "He did not know what he was doing wrong, so he is beaten only lightly.", sound: false },
-        { t: "It proves that every teacher who fails his students must receive an identical sentence.", sound: false }
-      ]},
     { v: "mt18_6", cited: false,
       note: "This is the reasoning most students use to send him to Lone, and Jalyn did not use it. The millstone is spoken over someone who causes a little one to sin. Motivator's students were failed, flattered and left unwarned, which is a grave thing and a different thing. The parable is careful about that distinction even when it is painful, and so is the text.",
       just: [
@@ -582,13 +547,6 @@ const CASES = [
         { t: "Faint Heart was entrusted to his care and he used her. He was given authority to protect and used it to prey. That is the millstone.", sound: true },
         { t: "He caused her to stumble by teaching her badly in the classroom.", sound: false },
         { t: "The text applies because she ended up in Lone.", sound: false }
-      ]},
-    { v: "jas3_1", cited: true,
-      note: "Jalyn's answer to “I was a teacher in your school.” The chair he offered as a defense was the aggravating factor.",
-      just: [
-        { t: "He took the teacher's chair, and he taught the very passages now being read against him. The stricter judgment is the one he signed up for.", sound: true },
-        { t: "Teaching is inherently dangerous and he should have refused the job.", sound: false },
-        { t: "He was judged strictly because he was a poor teacher in the classroom.", sound: false }
       ]},
     { v: "jude_13", cited: true,
       note: "Jalyn's words were “For you, I've reserved a place in the deepest darkness.” This is the text behind the measure, not the verdict.",
@@ -659,13 +617,6 @@ const CASES = [
         { t: "He was rewarded for the size of his audience as a columnist.", sound: false },
         { t: "He was rewarded because he happened to write well.", sound: false }
       ]},
-    { v: "cor2_9_10", cited: true,
-      note: "Jalyn used the multiplication principle to explain that Brutal's thousand lives were credited to Patient as well, because she reached him first.",
-      just: [
-        { t: "His thousand lives were also credited to Patient, who reached him. The seed multiplies and the harvest lands on more than one account.", sound: true },
-        { t: "It means his giving made him wealthy.", sound: false },
-        { t: "It means Patient deserves his reward instead of him.", sound: false }
-      ]},
     { v: "prov30_12", cited: false,
       note: "Deceived's text, and the most natural verse to reach for if you found Brutal insufferable. Jalyn read the same behavior as faithfulness. Worth asking what evidence in the file would actually support a charge of self-righteousness against him. There is none. There is only the fact that he was disliked.",
       just: [
@@ -724,13 +675,6 @@ const CASES = [
         { t: "He watched nearly everything burn and still heard “I welcome you.” Saved, yet suffering loss, is the exact shape of this text.", sound: true },
         { t: "Because his work burned, his salvation was genuinely in doubt until the last moment.", sound: false },
         { t: "He was saved because a small part of his work survived the fire.", sound: false }
-      ]},
-    { v: "mt12_36_37", cited: true,
-      note: "Patient quoted this to him on the way to the throne, and he was shocked by it. He had assumed only the major decisions would be reviewed.",
-      just: [
-        { t: "He assumed he would answer for major decisions. Patient told him every careless word was on the account too, and it was.", sound: true },
-        { t: "It means only his public statements as mayor were subject to review.", sound: false },
-        { t: "It means words weigh more heavily than deeds.", sound: false }
       ]},
     { v: "cor1_4_5", cited: true,
       note: "Endel applauded the department store vote. Jalyn's review showed the campaign money and the dinner invitations underneath it.",
@@ -811,13 +755,6 @@ const CASES = [
         { t: "She asked for a smaller job while the throne was being offered. Jalyn quoted this back to her and gave her the throne anyway.", sound: true },
         { t: "She was exalted because she deliberately acted humble.", sound: false },
         { t: "It means the poor are automatically ranked above the wealthy.", sound: false }
-      ]},
-    { v: "cor2_9_10", cited: true,
-      note: "Jalyn quoted the promise to multiply the sown seed and then showed her the ripple effects behind her 5,183.",
-      just: [
-        { t: "Her 5,183 was not a count of her actions. Jalyn called it the multiplication principle and showed her the ripples she never saw.", sound: true },
-        { t: "It means giving 25 percent guarantees a large financial return.", sound: false },
-        { t: "It means her restaurant profits were the seed and the money multiplied.", sound: false }
       ]},
     { v: "rev2_26_27", cited: true,
       note: "Jalyn quoted this as he handed her the scepter and gave her the name Cherished Overcomer.",

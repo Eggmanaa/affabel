@@ -145,10 +145,10 @@ const CCC = {
 const CASE_CCC = {
   independent: {
     heading: "Unbelief, and how much he knew",
-    cites: ["1033", "679", "1860"],
-    note: "Jalyn condemns Independent for unbelief, and CCC 679 agrees that rejecting grace in this life is a way of judging oneself. But notice what 1033 does to the picture. Hell is described as a state of definitive self-exclusion, entered by our own free choice: something a person walks into rather than something done to them. That is remarkably close to Jalyn's own line about being a merciful king. Then hold 1860 against the file and ask the harder question, because he skipped the classes on purpose. Is that the unintentional ignorance that can diminish imputability, or is it the feigned ignorance of 1859, which increases it?",
-    tension: "The parable is narrower here than the Church is. Every citizen of Endel had a school and either attended it or refused it, so nobody in the allegory dies never having been offered the truth. The Church has a category the parable does not:",
-    tensionCites: ["847"]
+    cites: ["161", "1033", "679", "1860"],
+    note: "CCC 161 is the plainest statement of what Jalyn actually held against him, and it is the Church's, not the parable's: believing in Jesus Christ and in the One who sent him is necessary for obtaining salvation. Jalyn condemns Independent for unbelief, and CCC 679 agrees that rejecting grace in this life is a way of judging oneself. But notice what 1033 does to the picture. Hell is described as a state of definitive self-exclusion, entered by our own free choice: something a person walks into rather than something done to them. That is remarkably close to Jalyn's own line about being a merciful king. Then hold 1860 against the file and ask the harder question, because he skipped the classes on purpose. Is that the unintentional ignorance that can diminish imputability, or is it the feigned ignorance of 1859, which increases it?",
+    tension: "The parable is narrower here than the Church is. Every citizen of Endel had a school and either attended it or refused it, so nobody in the allegory dies never having been offered the truth. The Church has a category the parable does not. And read 1037 alongside his last plea, because he was right that the king is merciful. He was wrong about what mercy does with a will that has permanently set itself:",
+    tensionCites: ["847", "1037"]
   },
   reconciled: {
     heading: "Seven days, and the good thief",
@@ -157,8 +157,8 @@ const CASE_CCC = {
   },
   deceived: {
     heading: "A faith that produced nothing",
-    cites: ["1815", "1857", "1861"],
-    note: "His whole defence is that he believed. CCC 1815 grants the premise and denies the conclusion in one sentence: the gift of faith remains in one who has not sinned against it, but faith deprived of hope and love does not make him a living member of the Body. Then run his life through the three conditions in 1857 and ask the class, item by item, whether they are met."
+    cites: ["1815", "1996", "1857", "1861"],
+    note: "His whole defence is that he believed. CCC 1815 grants the premise and denies the conclusion in one sentence: the gift of faith remains in one who has not sinned against it, but faith deprived of hope and love does not make him a living member of the Body. Then 1996, because his argument is the grace argument and the Church makes it before he does: justification comes from the grace of God, free and undeserved. The Church never disputes the text he is standing on. What she disputes, with him, is whether he ever received what it describes. Then run his life through the three conditions in 1857 and ask the class, item by item, whether they are met."
   },
   patient: {
     heading: "Judged on love, not on office",
@@ -167,9 +167,10 @@ const CASE_CCC = {
   },
   faintheart: {
     heading: "A gift that can be lost, and a wound never laid down",
-    cites: ["162", "2843", "1735"],
-    note: "Put 162 in front of any student who thinks the parable invented a cruel doctrine. Faith is a free gift, we can lose this priceless gift, and persevering to the end requires that we nourish it. That is the Church, not Bevere. Then 2843, which is the most humane paragraph in this whole apparatus and the one that fits her exactly: it is not in our power not to feel or to forget an offense, but the heart that offers itself to the Holy Spirit turns injury into compassion. She was genuinely wronged and she was never asked to pretend otherwise. She was asked to hand it over, and for forty years she would not.",
-    tension: "Read 1735 with real care before you let a class be hard on her. The Church holds that responsibility can be diminished or even nullified by duress, fear, habit and inordinate attachment, and every one of those words applies somewhere in her file."
+    cites: ["162", "2840", "2843"],
+    note: "Put 162 in front of any student who thinks the parable invented a cruel doctrine. Faith is a free gift, we can lose this priceless gift, and persevering to the end requires that we nourish it. That is the Church, not Bevere. Then 2840, which is the hinge of her whole case and comes from the Church's commentary on the Our Father: mercy cannot penetrate a heart that has not forgiven, and the hardness of an unforgiving heart makes it impervious to the Father's merciful love. She prayed for forgiveness for forty years in a language that made it conditional. Then 2843, which is the most humane paragraph in this whole apparatus and the one that fits her exactly: it is not in our power not to feel or to forget an offense, but the heart that offers itself to the Holy Spirit turns injury into compassion. She was genuinely wronged and she was never asked to pretend otherwise. She was asked to hand it over, and for forty years she would not.",
+    tension: "Read 1735 with real care before you let a class be hard on her. The Church holds that responsibility can be diminished or even nullified by duress, fear, habit and inordinate attachment, and every one of those words applies somewhere in her file.",
+    tensionCites: ["1735"]
   },
   content: {
     heading: "The right deed for the wrong reason",
@@ -178,14 +179,14 @@ const CASE_CCC = {
   },
   humbled: {
     heading: "Saved, and still not finished",
-    cites: ["2285", "1030", "1031", "1472"],
+    cites: ["2285", "1030"],
     note: "CCC 2285 is the paragraph this case was waiting for. Scandal is grave when given by those who by nature or office are obliged to teach and educate others, and the curse the Church quotes there is the millstone itself. That is the Church taking his failure at least as seriously as the parable does. And then the allegory runs out of room. He is in the kingdom and he is not yet fit for the best of it, and all the story can do with that is give him a back row and a job. The Church has a name for the condition of one who dies in God's friendship but imperfectly purified, and 1030 is that name.",
     tension: "The parable has no purgatory. It cannot: Bevere writes from a tradition that does not hold it, so there is nowhere in Endel to put the idea. This is the single largest gap between the allegory and the Catechism, and this is the case where it first becomes unmissable. Ask the class directly what CCC 1030 says would happen to this man that the story never shows."
   },
   doublelife: {
     heading: "Knowledge makes the sin heavier, and office heavier still",
-    cites: ["1859", "2285", "2287", "1035"],
-    note: "He asks the exact question CCC 1859 answers. He knew, he taught the very passages being read against him, and the Church says feigned ignorance and hardness of heart do not diminish but rather increase the voluntary character of a sin. Then 2285 and 2287 are as close as the Catechism comes to describing this case by name: scandal takes on particular gravity by reason of the authority of those who cause it and the weakness of those who are scandalized, and anyone who uses the power at his disposal so that it leads others to do wrong is responsible for the evil he encouraged. Set 1859 beside 1860 and you have the whole distance between this man and the one judged first, in two paragraphs."
+    cites: ["1859", "2284", "2285", "2287", "1035"],
+    note: "He asks the exact question CCC 1859 answers. He knew, he taught the very passages being read against him, and the Church says feigned ignorance and hardness of heart do not diminish but rather increase the voluntary character of a sin. Then 2284 gives the Church's definition, and it is worth reading slowly against a man who taught the writings by day: the one who gives scandal becomes his neighbour's tempter, and may even draw his brother into spiritual death. 2285 and 2287 are then as close as the Catechism comes to describing this case by name: scandal takes on particular gravity by reason of the authority of those who cause it and the weakness of those who are scandalized, and anyone who uses the power at his disposal so that it leads others to do wrong is responsible for the evil he encouraged. Set 1859 beside 1860 and you have the whole distance between this man and the one judged first, in two paragraphs."
   },
   evangelist: {
     heading: "On disliking the witness",
