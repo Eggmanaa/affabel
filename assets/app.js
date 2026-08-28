@@ -443,7 +443,8 @@ function deliver() {
     <div class="teachnote">
       <span class="eyebrow">Sit with this</span>
       <p>${esc(c.lesson)}</p>
-    </div>`;
+    </div>
+    ${cccPanel(c)}`;
 
   $("#rulingBox").hidden = false;
   $("#caseNav").hidden = false;
@@ -463,6 +464,36 @@ function initCase() {
   $("#returnBtn").addEventListener("click", () => { renderDocket(); show("docket"); });
   $("#lockTextsBtn").addEventListener("click", lockTexts);
   $("#deliverBtn").addEventListener("click", deliver);
+}
+
+
+/* ---------- the Catechism alongside the parable ---------- */
+
+function cccPanel(c) {
+  const a = typeof CASE_CCC !== "undefined" && CASE_CCC[c.id];
+  if (!a) return "";
+
+  const paras = a.cites.map(n => {
+    const p = CCC[n];
+    if (!p) return "";
+    return `<div class="ccc-para">
+      <div class="ccc-ref">Catechism ${esc(n)}${p.excerpt ? ' <span class="ccc-ex">excerpt</span>' : ""}</div>
+      <p>${esc(p.text)}</p>
+    </div>`;
+  }).join("");
+
+  return `<div class="ccc">
+    <div class="ccc-head">
+      <span class="eyebrow">The Church's own words</span>
+      <h5>${esc(a.heading)}</h5>
+    </div>
+    ${paras}
+    <p class="ccc-note">${esc(a.note)}</p>
+    ${a.tension ? `<div class="ccc-tension">
+      <span class="eyebrow">Where the parable and the Catechism part ways</span>
+      <p>${esc(a.tension)}</p>
+    </div>` : ""}
+  </div>`;
 }
 
 /* ---------- the record ---------- */

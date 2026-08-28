@@ -723,3 +723,79 @@ input[type="text"]:focus { outline: none; border-color: var(--gold); }
   background: rgba(0,0,0,.25);
 }
 .plea-after p { font-size: 1.15rem; }
+
+
+/* ---------- the Catechism panel ---------- */
+
+.ccc {
+  margin-top: 26px;
+  padding: 26px 26px 22px;
+  border: 1px solid rgba(127,179,200,.32);
+  border-left: 2px solid var(--affabel);
+  border-radius: 3px;
+  background: rgba(127,179,200,.055);
+}
+
+.ccc-head { margin-bottom: 18px; }
+.ccc-head .eyebrow { color: var(--affabel-lit); display: block; margin-bottom: 6px; }
+.ccc-head h5 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--parchment);
+}
+
+.ccc-para { margin-bottom: 16px; }
+.ccc-ref {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--affabel);
+  margin-bottom: 6px;
+}
+.ccc-ex {
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: var(--faint);
+  border: 1px solid var(--edge-2);
+  border-radius: 100px;
+  padding: 1px 7px;
+  margin-left: 6px;
+}
+.ccc-para p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: var(--parchment-2);
+}
+
+.ccc-note {
+  margin: 20px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(127,179,200,.22);
+  font-size: 15px;
+  color: var(--parchment-2);
+}
+
+.ccc-tension {
+  margin-top: 20px;
+  padding: 16px 18px;
+  border: 1px dashed rgba(224,122,95,.45);
+  border-radius: 3px;
+  background: rgba(180,68,46,.06);
+}
+.ccc-tension .eyebrow { color: var(--lone-lit); display: block; margin-bottom: 7px; }
+.ccc-tension p { margin: 0; font-size: 14.5px; color: var(--parchment-2); }
+
+@media (max-width: 640px) {
+  .ccc { padding: 20px 18px 18px; }
+}
+
+@media print {
+  .ccc, .ccc-tension { border-color: #999 !important; background: #fff !important; }
+  .ccc-para p, .ccc-note, .ccc-tension p, .ccc-head h5 { color: #000 !important; }
+  .ccc-ref { color: #333 !important; }
+}

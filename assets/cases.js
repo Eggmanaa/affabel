@@ -48,8 +48,8 @@ const CASES = [
   verdict: "lone", measure: "lower",
   ruling: "Independent, you are guilty of choosing an evil nature and are to be taken to the forsaken land of Lone.",
   reason: "“You did not believe in me,” Jalyn answered. Good works were never the currency. Independent had assumed his ledger would balance, and Jalyn told him the ledger was not the question: “It is not a matter of how little or much you break the law.” Then Jalyn added the thing Independent had counted on most: “I am a merciful king, and that is exactly why I'm sending you away. By choosing to spend your time in Endel the way you did, you permanently chose your nature.”",
-  measureReason: "Independent knew the least. He had skipped the classes that would have told him. Jalyn later told Double Life that Independent “was far less aware of his transgressions” and that his punishment, though severe, would be lighter. He was placed in the lower portion of the structure, with those who did not know the truth but still did what deserved exile.",
-  lesson: "Start here because it is the easy one. Almost everyone rules correctly. Notice what that confidence feels like, and then watch what happens to it over the next ten cases.",
+  measureReason: "Independent knew the least. He had skipped the very classes that would have told him, so his ignorance was self-inflicted, but it was still real and it still counted. He was placed in the lower portion of the structure, with those who did not know the truth and yet did what deserved exile. The measure of a sentence in this parable tracks what a person actually understood.",
+  lesson: "Start here because it is the easy one. Almost everyone rules correctly and almost everyone feels certain doing it. Notice what that certainty feels like now, at the beginning, while it is cheap.",
   texts: [
     { v: "jn8_24", cited: true,
       note: "Jalyn's first answer to “Lord, why?” He did not begin with the man's conduct. He began with his unbelief.",
@@ -72,19 +72,19 @@ const CASES = [
         { t: "Because it is a gift, it is given to everyone whether they want it or not.", sound: false },
         { t: "Because works cannot save, works carry no weight anywhere in judgment.", sound: false }
       ]},
-    { v: "cor1_3_12_15", cited: false,
-      note: "This text governs someone already standing on the foundation, whose building materials are tested. Independent never laid a foundation. There was nothing of his to burn. Jalyn used this in the other hall, on Selfish and Motivator.",
+    { v: "acts4_12", cited: true,
+      note: "Jalyn's answer immediately after John 8:24, and part of the same sentence: his teachers had taught that there is salvation in no one else, and no other name given by which anyone is saved.",
       just: [
-        { t: "His works were burned up, but he himself should still be saved through the flames.", sound: false },
-        { t: "He built nothing at all, so the fire had nothing to test.", sound: false },
-        { t: "The fire proved his good deeds outweighed his bad ones.", sound: false }
+        { t: "There was one name that could have saved him and he spent his life refusing it. No amount of civic good supplies a second one.", sound: true },
+        { t: "He simply picked the wrong religion and should have been told more clearly.", sound: false },
+        { t: "It means salvation is narrow, so very few people can ever be saved.", sound: false }
       ]},
-    { v: "mt24_12_13", cited: false,
-      note: "This describes someone who began in faith and cooled. Independent never began. Jalyn read this over Faint Heart, who had been the most passionate student in the class.",
+    { v: "mt25_34_40", cited: false,
+      note: "The deeds line up at a distance. He did support the community's projects and he was thought a good citizen for it. But this text describes service done to the King himself, recognised as such only afterward, by people whose lives were pointed at him. Independent's giving was real and it was never for Jalyn. When he asked for it to be weighed, Jalyn did not weigh it.",
       just: [
-        { t: "His love grew cold over his years in Endel.", sound: false },
-        { t: "He failed to persevere to the end.", sound: false },
-        { t: "The evildoing around him hardened him, so the fault lies with Endel.", sound: false }
+        { t: "He fed and clothed his community through the projects he funded, so he did it for Jalyn.", sound: false },
+        { t: "He was a good citizen and this text rewards good citizens.", sound: false },
+        { t: "His civic generosity should count as service to the least of these.", sound: false }
       ]}
   ]
 },
@@ -123,11 +123,11 @@ const CASES = [
   verdict: "affabel", measure: "unspecified",
   ruling: "Lord Jalyn changed his name at the Judgment Seat to Reconciled.",
   reason: "He entered Affabel as a regal citizen. When Jalyn was later challenged about this very case, he answered with Ezekiel: if a wicked person turns away from his wickedness and does right, he shall save his soul. Reconciled himself said he was “shown possibly the greatest mercy before our king.” Seven days of real obedience outweighed a lifetime of the other thing.",
-  measureReason: "The parable does not name his station. He is among the citizens Charity passes on her way to the throne, and he tells her he has been “rewarded handsomely for my labor, even though it was brief.” Any placement inside Affabel is defensible here, so this case is scored on the verdict alone.",
+  measureReason: "The parable never names his station. He appears later among the citizens of the city, and he says of himself that he was rewarded handsomely for his labour even though it was brief. Any placement inside Affabel is defensible here, so this case is scored on the verdict alone.",
   lesson: "The first trap. If you sent him to Lone, ask yourself what you were actually judging: his record, or his final direction. Jalyn judges the direction.",
   texts: [
     { v: "ezek18_27", cited: true,
-      note: "Jalyn quoted this passage about this exact case, an hour later, when Deceived protested that letting Ruthless in was unfair.",
+      note: "This is the text Jalyn invokes for exactly this case, and he invokes it more than once during the day's judgments. It is the hinge the whole ruling turns on.",
       just: [
         { t: "He turned from the wickedness he had done and did what is right and just. This text describes his case precisely.", sound: true },
         { t: "He balanced his old crimes against a week of good deeds and came out ahead.", sound: false },
@@ -141,26 +141,19 @@ const CASES = [
         { t: "His record was overlooked because he felt genuinely terrible about it.", sound: false }
       ]},
     { v: "jas2_14_19", cited: true,
-      note: "The text read over Deceived to convict him reads the other way here. Reconciled's faith was one week old and it had already sent him back to every person he had robbed.",
+      note: "The same passage that convicts a merely professed faith reads the other way here. His faith was seven days old and it had already sent him back to every person he had robbed.",
       just: [
         { t: "His faith was real, and the proof is that within days it sent him back to everyone he had wronged.", sound: true },
         { t: "He performed enough good works in a week to be counted righteous.", sound: false },
         { t: "Since he believed, the works were optional extras he happened to add.", sound: false }
       ]},
     { v: "jas2_10", cited: false,
-      note: "Jalyn used this on Independent, who asked to have his record weighed. Reconciled never asked for his record to be weighed. He asked to be forgiven, which is a different request entirely.",
+      note: "Jalyn used this on the man judged before him, who asked to have his record weighed on a scale. Reconciled never asked for that. He did not argue that his good outweighed his bad; he asked to be forgiven, which is a different request and gets a different answer.",
       just: [
         { t: "He broke the whole law repeatedly, so he is guilty in respect to all of it.", sound: false },
         { t: "One slip is as serious as many, so his crimes were no worse than anyone else's.", sound: false },
         { t: "He kept the law in his final week, so this verse clears him.", sound: false }
       ]},
-    { v: "mt6_1_4", cited: false,
-      note: "This measures the motive under a visible deed. His restitution was certainly visible. Nothing in the account suggests he made it in order to be seen, and Charity, who knew him, described his motive as love.",
-      just: [
-        { t: "His restitution was public, so he already received his reward in Endel.", sound: false },
-        { t: "He gave back more than he took in order to be seen doing it.", sound: false },
-        { t: "He gave in secret, so his Father repaid him.", sound: false }
-      ]}
   ]
 },
 
@@ -230,7 +223,7 @@ const CASES = [
         { t: "The text condemns anyone who quotes Scripture in public.", sound: false }
       ]},
     { v: "eph2_8_9", cited: false,
-      note: "This is Deceived's own argument, nearly word for word. Jalyn never disputed the text. He disputed whether Deceived possessed the faith it describes. The same verse acquitted Reconciled in the same hall on the same morning.",
+      note: "This is Deceived's own argument, nearly word for word. Jalyn never disputed the text. He disputed whether Deceived possessed the faith it describes. Note that the very same verse had already worked in a man's favour earlier that morning: Ruthless could not have earned anything in seven days, and did not need to.",
       just: [
         { t: "He believed, and salvation comes by faith and not works, so he should be saved.", sound: false },
         { t: "Since no one can boast, his lifestyle could not have disqualified him.", sound: false },
@@ -271,7 +264,7 @@ const CASES = [
   ],
   verdict: "affabel", measure: "throne",
   ruling: "She sits on one of the thrones. She is an underruler in Affabel, and Jalyn sends her to meet Selfish before he reaches the throne.",
-  reason: "Jalyn explained her five thousand by the multiplication principle. Everyone the school served was credited to her because she funded and served the school. Every life Brutal reached was credited to her because she reached Brutal. Nothing she did looked like much on the day she did it.",
+  reason: "Jalyn explained her total by the multiplication principle. Everyone the school served was credited to her because she funded and served the school. Every life reached by the man she brought to Jalyn's service was credited to her as well, because she reached him first. Nothing she did looked like much on the day she did it.",
   revealed: [
     "Jalyn asked an underruler how many citizens Patient had influenced for the kingdom. The answer was just over five thousand."
   ],
@@ -292,22 +285,15 @@ const CASES = [
         { t: "She was given a throne because she achieved great things in Endel.", sound: false },
         { t: "Her reward was scaled to match her job as a secretary.", sound: false }
       ]},
-    { v: "lk14_11", cited: true,
-      note: "Jalyn quoted this to Charity, and it governs Patient the same way. She never sought a seat. Selfish walked in scanning the room for his.",
-      just: [
-        { t: "She never sought a seat and was given one. Selfish expected a throne and was seated in the flatlands. The reversal is the point.", sound: true },
-        { t: "She was exalted because she was naturally shy and reserved.", sound: false },
-        { t: "It means the poor are always ranked above the wealthy.", sound: false }
-      ]},
     { v: "mt6_1_4", cited: true,
-      note: "The same text that convicts Social vindicates her. He performed his giving. She gave where nobody was looking, and the second half of the text is about her.",
+      note: "She gave where nobody was watching, and the second half of this text is about precisely that: the Father who sees in secret is the one who repays. Read the first half too, and notice that it is the same verse. It cuts one way for the giver who performs and the other way for the giver who hides.",
       just: [
         { t: "She gave where nobody was watching. The text says the Father who sees in secret is the one who repays, and he did.", sound: true },
         { t: "She avoided public giving because giving in public is always sinful.", sound: false },
         { t: "She gave secretly in order to collect a larger reward later.", sound: false }
       ]},
     { v: "cor1_3_12_15", cited: false,
-      note: "Her work survived the fire. This text describes what happened to Selfish and Motivator in the same hall on the same morning. Applying it to Patient inverts her case exactly.",
+      note: "Her work survived the fire. This text describes a builder whose materials do not, which is a real category and not hers. Applying it to Patient inverts her case exactly: it would make the woman whose small deeds multiplied into thousands into the one who has almost nothing left.",
       just: [
         { t: "Most of what she built burned, so she was saved only as through fire.", sound: false },
         { t: "Her small deeds were straw rather than gold.", sound: false },
@@ -429,7 +415,7 @@ const CASES = [
   ruling: "His name is no longer Social. Jalyn renamed him Content. He lives in the flatlands and works as a plumber. He is one of the least citizens of Affabel.",
   reason: "The deeds were real and the community benefited. But Jalyn judged what the deeds were for, and by that measure most of them had already been paid out in Endel, in the form of recognition and customers. He is in the kingdom. He is also in the back row, and he is not bitter about it: “I am in debt to his extravagant kindness for the rest of my life.”",
   measureReason: "The back rows of the Great Hall, the flatlands of the city, labor-intensive work. The least in the kingdom.",
-  lesson: "Hold this case until after they have judged Charity, or bring Charity back up here. Two restaurant owners. Both generous, both publicly good, both in Affabel. One is a plumber in the flatlands and one is a governor. The externals were nearly identical. Ask what actually separated them.",
+  lesson: "Everything on his file is true and everything on it was admired. He is in the kingdom and he is in the back row, and he is the first person in this docket for whom the gap between the deed and the reason behind it decided the whole outcome. Keep his file in mind. You will meet its mirror image before the docket is finished.",
   texts: [
     { v: "mt6_1_4", cited: true,
       note: "The governing text. He describes his own motive in almost the words of the verse: he gave to gain recognition and to draw patrons.",
@@ -446,7 +432,7 @@ const CASES = [
         { t: "He should have charged the poor less at his restaurant.", sound: false }
       ]},
     { v: "cor1_3_12_15", cited: true,
-      note: "Motivator quotes this text in the same hall to explain the back rows. It is the mechanism behind every flatlands assignment in the parable.",
+      note: "The mechanism behind every reduced station in this parable. The foundation is the lordship of Jalyn, and where it holds a person is in the city. What gets built on top of it is what the fire tests, and straw does not survive testing.",
       just: [
         { t: "The foundation held, so he is in the city. Almost everything he built on it was straw, so he is in the back row.", sound: true },
         { t: "He was saved through fire, meaning he barely escaped being condemned.", sound: false },
@@ -460,7 +446,7 @@ const CASES = [
         { t: "His hidden motives were secret sins that nobody in Endel knew about.", sound: false }
       ]},
     { v: "mt25_34_40", cited: false,
-      note: "His deeds match this text almost line for line. His motive does not. Jalyn gave this text to Charity, whose confusion was genuine when she asked “when did I ever see you hungry?” Social knew exactly what he was doing and exactly why.",
+      note: "His deeds match this text almost line for line: he fed people, he welcomed people, he gave. What the text describes, though, is service rendered to the King without knowing it, discovered only when he names it. Social knew exactly what he was doing and exactly why, and said so himself. The deeds match; the astonishment does not.",
       just: [
         { t: "He fed the hungry with free meals, so he did it for Jalyn.", sound: false },
         { t: "His community events welcomed the stranger.", sound: false },
@@ -506,7 +492,7 @@ const CASES = [
   ruling: "His name is no longer Motivator. Jalyn renamed him Humbled. He is in the back rows, one of the least citizens of the city.",
   reason: "He is in Affabel. He believed, and the foundation held. Everything he built on top of it burned. He describes it himself: “When measured by the ancient writings, my life fell short of his expectations and I failed in the area of my influence on those I taught. I lost my reward.”",
   measureReason: "The back rows. The flatlands. He is one of the least citizens of the city, and he grieves the students he lost.",
-  lesson: "Almost everyone sends this man to Lone. Students of his are in Lone because of what he taught. Ask the class to sit in that: his failure genuinely damned other people, and he is still saved. Then hold the question until the next case.",
+  lesson: "Almost everyone sends this man to Lone. Students of his are in Lone because of what he taught them, and he is saved. Sit in that before you move on, because the reason is not that the damage was small. It was not small. He grieves it for the rest of his life.",
   texts: [
     { v: "ezek13_10_11", cited: true,
       note: "He quotes this against himself. It is the sharpest thing said about him in the parable, and he is the one who says it.",
@@ -516,7 +502,7 @@ const CASES = [
         { t: "He taught false doctrine and led his people into error.", sound: false }
       ]},
     { v: "cor1_3_12_15", cited: true,
-      note: "He quotes this at length to Selfish to explain why a famous teacher is standing in the back rows. It is the text that holds his salvation and his loss together.",
+      note: "He quotes this at length to explain why a famous teacher is standing in the back rows. It is the text that holds his salvation and his loss together in one sentence: the work burns, the builder is saved.",
       just: [
         { t: "The foundation was Jalyn's lordship and it held, which is why he is in the city. What he built on it was wood and hay, which is why he is in the back.", sound: true },
         { t: "He is saved as through fire, which shows his teaching did no lasting harm.", sound: false },
@@ -530,14 +516,14 @@ const CASES = [
         { t: "It means he should never have taught in the first place.", sound: false }
       ]},
     { v: "lk12_47_48", cited: true,
-      note: "The same text Jalyn used on Double Life, and it separates them rather than joining them. Motivator knew his charge and did not act on it, but he was not the servant who beat the others.",
+      note: "He knew the charge he had been given, which was to preach the whole counsel, and he did not carry it out. Much was entrusted to him and much was required. Notice that the same text can grade a punishment as well as a loss, depending on which side of the verdict the servant falls.",
       just: [
         { t: "He knew the charge to preach the whole counsel and did not do it. Much was entrusted to him and much was required.", sound: true },
         { t: "He did not know what he was doing wrong, so he is beaten only lightly.", sound: false },
         { t: "It proves his punishment must equal Double Life's.", sound: false }
       ]},
     { v: "mt18_6", cited: false,
-      note: "This is the exact reasoning most students use to send him to Lone, and it is the reasoning Jalyn did not use. He read this text over Double Life, who used his authority to prey on someone entrusted to him. Motivator's failure was cowardice, not predation. The parable holds them apart on purpose, and the distance between the flatlands and that dungeon is the whole lesson.",
+      note: "This is the reasoning most students use to send him to Lone, and Jalyn did not use it. The millstone is spoken over someone who causes a little one to sin. Motivator's students were failed, flattered and left unwarned, which is a grave thing and a different thing. The parable is careful about that distinction even when it is painful, and so is the text.",
       just: [
         { t: "His students fell into Lone because of what he taught them, so the millstone applies.", sound: false },
         { t: "He caused little ones to stumble by covering over their faults.", sound: false },
@@ -652,15 +638,15 @@ const CASES = [
   ],
   verdict: "affabel", measure: "unspecified",
   ruling: "He will be renamed Evangelist. Every life he built was also credited to Patient, because she led him to Jalyn and supported the school that trained him.",
-  reason: "Selfish had read him as obnoxious. Jalyn read him as a great communicator of his ways. The parable's point lands in Selfish's own reaction: “Now he felt ashamed as he realized all Brutal stood for was in line with the kingdom's advancement. How could Selfish have been so blind?”",
+  reason: "The citizens of Endel read him as obnoxious. Jalyn read him as a great communicator of his ways. The parable makes the point through the reaction of a man who had disliked him for years and who realised, hearing Jalyn speak, that everything Brutal had stood for was in line with the kingdom's advancement, and that he had been blind to it the entire time.",
   revealed: [
     "Jalyn states that Brutal personally influenced more than a thousand lives for the kingdom, and that every one of them was also credited to Patient."
   ],
-  measureReason: "The parable does not narrate his sentencing. He is still in the Hall of Life awaiting judgment when Selfish is called, so his verdict is certain but his station is not stated. This case is scored on the verdict alone.",
+  measureReason: "The parable does not narrate his sentencing. He is still waiting to be called when Jalyn speaks about him, so his verdict is certain and his station is never stated. This case is scored on the verdict alone.",
   lesson: "The one nobody liked. Ask whether any student docked him for being annoying, and where in the Book that criterion appears. Then note the multiplication: his thousand lives also went onto Patient's account. Nobody's ledger is only their own.",
   texts: [
     { v: "sam1_16_7", cited: true,
-      note: "The principle the whole case turns on. Endel judged Brutal by how he came across. Jalyn reports what he found in the heart, and it was not what Selfish expected.",
+      note: "The principle the whole case turns on. Endel judged Brutal by how he came across, and the community's verdict on him was close to unanimous. Jalyn reports what he found in the heart instead, and it is not what anyone expected.",
       just: [
         { t: "Endel judged him by how he came across. Jalyn looked into the heart and found a great communicator of his ways.", sound: true },
         { t: "It means appearance never matters at all in how we treat one another.", sound: false },
@@ -679,13 +665,6 @@ const CASES = [
         { t: "His thousand lives were also credited to Patient, who reached him. The seed multiplies and the harvest lands on more than one account.", sound: true },
         { t: "It means his giving made him wealthy.", sound: false },
         { t: "It means Patient deserves his reward instead of him.", sound: false }
-      ]},
-    { v: "rev2_26_27", cited: true,
-      note: "The text Jalyn used over Charity for the same reason: keeping to his ways to the end is what the authority is granted for.",
-      just: [
-        { t: "He kept to Jalyn's ways to the end and was given a communicator's authority. The victor language is the reward language.", sound: true },
-        { t: "It promises political power to anyone sufficiently zealous.", sound: false },
-        { t: "The iron rod means he was right to be harsh with people.", sound: false }
       ]},
     { v: "prov30_12", cited: false,
       note: "Deceived's text, and the most natural verse to reach for if you found Brutal insufferable. Jalyn read the same behavior as faithfulness. Worth asking what evidence in the file would actually support a charge of self-righteousness against him. There is none. There is only the fact that he was disliked.",
@@ -740,7 +719,7 @@ const CASES = [
   lesson: "Selfish passed his own sentence before Jalyn spoke, and he got it wrong in the harsh direction. Worth asking: was he wrong about what he deserved, or only about what he would receive? The parable seems to say he was right about the first and had no idea about the second.",
   texts: [
     { v: "cor1_3_12_15", cited: true,
-      note: "The governing text of the entire Hall of Life. His case is its clearest illustration: almost total loss, and salvation never actually in doubt.",
+      note: "The governing text of his case and its clearest illustration anywhere in the parable: almost total loss, and salvation never actually in doubt for a moment. He watched the fire take nearly everything and then heard himself welcomed.",
       just: [
         { t: "He watched nearly everything burn and still heard “I welcome you.” Saved, yet suffering loss, is the exact shape of this text.", sound: true },
         { t: "Because his work burned, his salvation was genuinely in doubt until the last moment.", sound: false },

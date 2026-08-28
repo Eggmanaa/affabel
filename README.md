@@ -75,6 +75,24 @@ The deliberate contrasts:
 - The record also reports how often a student ruled **harsher** or **gentler** than Jalyn,
   which is usually the most productive thing to discuss.
 
+## Catholic apparatus
+
+The parable is Protestant in origin, so every ruling is followed by the Church's own words on
+the same question, quoted verbatim from the Catechism of the Catholic Church as published by the
+Holy See. Twenty-three paragraphs, mapped to the cases they bear on.
+
+The three places where the allegory and the Catechism genuinely diverge are named rather than
+smoothed over:
+
+- **Purgatory.** The parable has none, and cannot: 1 Corinthians 3:15 produces a back row in the
+  city rather than a purification. Surfaces on Motivator and Selfish.
+- **Those who never heard.** Endel has no category for the person who never had a real chance;
+  CCC 847 and Lumen Gentium 16 do.
+- **Merit and grace.** The Hall of Life runs on merit; CCC 1996-2011 explains how that squares
+  with salvation as gift.
+
+Gathered on one printable page at `catechism.html`.
+
 ## Scripture
 
 All quotations are the New American Bible, Revised Edition (NABRE), retrieved from the
@@ -90,7 +108,8 @@ Rossetti, Bouguereau, and Gustave Doré.
 ## Editing
 
 - `assets/data.js` — the 48 NABRE texts, the artwork, and the station and measure definitions
-- `assets/cases.js` — the eleven cases: evidence, pleas, rulings, text pools, and every reading
+- `assets/cases.js` — the eleven cases: evidence, both speeches, rulings, text pools, and every reading
+- `assets/magisterium.js` — the Catechism paragraphs and their mapping onto the cases
 - `assets/app.js` — application logic
 - `assets/styles.css` — styling
 - `index.html` — page structure and the briefing screen
