@@ -52,28 +52,28 @@ const CASES = [
   lesson: "Start here because it is the easy one. Almost everyone rules correctly and almost everyone feels certain doing it. Notice what that certainty feels like now, at the beginning, while it is cheap.",
   texts: [
     { v: "jn8_24", cited: true,
-      note: "Jalyn's first answer to “Lord, why?” He did not begin with the man's conduct. He began with his unbelief.",
+      note: "The charge itself, in one line. Jalyn's answer to “Lord, why?” had nothing to do with conduct. Independent never believed him, and a person dies in the state he spent his life choosing.",
       just: [
-        { t: "He was told the truth and refused it. Unbelief is not one missing item on a checklist. It is the whole verdict.", sound: true },
-        { t: "He never heard the message clearly, so this cannot fairly be laid on him.", sound: false },
-        { t: "He dies in his sins because his sins were unusually severe.", sound: false }
+        { t: "He heard the claim, looked at it, and declined it. What condemns him is that refusal, not the size of anything he did.", sound: true },
+        { t: "He never heard the message clearly, so the refusal cannot fairly be laid on him.", sound: false },
+        { t: "He dies in his sins because his particular sins were unusually severe.", sound: false }
       ]},
-    { v: "jas2_10", cited: true,
-      note: "Jalyn's direct answer to “didn't my good outweigh my evil?” He quoted this to say the scale was never the instrument.",
+    { v: "jn3_18", cited: true,
+      note: "The verse that makes the sentence make sense. Condemnation is not handed down at the end of the day. It is already in place, and it is in place for one reason: he did not believe. Judgment Day only shows him where he already was.",
       just: [
-        { t: "He asked for his ledger to be weighed. This is the answer that the ledger was never the standard, because one breach is enough.", sound: true },
-        { t: "It proves his good deeds were worthless and helped nobody in Endel.", sound: false },
-        { t: "It makes everyone equally guilty, so every sentence handed down today should be identical.", sound: false }
+        { t: "Nothing new happened to him at the throne. The verdict was settled back in Endel, and today only made it visible.", sound: true },
+        { t: "He was condemned before he was born and could never have done anything about it.", sound: false },
+        { t: "He is condemned for the specific offences he committed, which this verse is listing.", sound: false }
       ]},
-    { v: "acts4_12", cited: true,
-      note: "Jalyn's answer immediately after John 8:24, and part of the same sentence: his teachers had taught that there is salvation in no one else, and no other name given by which anyone is saved.",
+    { v: "eph2_8_9", cited: true,
+      note: "His entire defence was a balance sheet: half the projects in Endel paid for, the volunteer services supported. This is the verse that says the balance sheet was never the instrument. What was held out to him was a gift, and a gift is not something you outbid.",
       just: [
-        { t: "There was one name that could have saved him and he spent his life refusing it. No amount of civic good supplies a second one.", sound: true },
-        { t: "He simply picked the wrong religion and should have been told more clearly.", sound: false },
-        { t: "It means salvation is narrow, so very few people can ever be saved.", sound: false }
+        { t: "He spent his life trying to pay for something that was free, and never once took the thing that was actually being offered.", sound: true },
+        { t: "Because it is a gift, it is handed to everyone whether they want it or not.", sound: false },
+        { t: "Because works cannot save, works carry no weight anywhere in judgment.", sound: false }
       ]},
     { v: "mt25_34_40", cited: false,
-      note: "The deeds line up at a distance. He did support the community's projects and he was thought a good citizen for it. But this text describes service done to the King himself, recognised as such only afterward, by people whose lives were pointed at him. Independent's giving was real and it was never for Jalyn. When he asked for it to be weighed, Jalyn did not weigh it.",
+      note: "The deeds line up at a distance. He did fund the community's projects and he was thought a good citizen for it. But the service described here is done to the King himself and recognised as such only afterward, by people whose lives were pointed at him. Independent's giving was real, and it was never for Jalyn. When he asked for it to be weighed, Jalyn did not weigh it.",
       just: [
         { t: "He fed and clothed his community through the projects he funded, so he did it for Jalyn.", sound: false },
         { t: "He was a good citizen and this text rewards good citizens.", sound: false },
@@ -134,7 +134,7 @@ const CASES = [
         { t: "His record was overlooked because he felt genuinely terrible about it.", sound: false }
       ]},
     { v: "jas2_14_19", cited: true,
-      note: "The same passage that convicts a merely professed faith reads the other way here. His faith was seven days old and it had already sent him back to every person he had robbed.",
+      note: "The passage that condemns a faith with nothing behind it acquits this man on the same terms. His faith was seven days old, and in seven days it had already sent him back to every person he had robbed.",
       just: [
         { t: "His faith was real, and the proof is that within days it sent him back to everyone he had wronged.", sound: true },
         { t: "He performed enough good works in a week to be counted righteous.", sound: false },
@@ -188,32 +188,39 @@ const CASES = [
   lesson: "Set this case beside Ruthless. Same courtroom, same morning, opposite outcomes, and the man with the better résumé lost. Deceived's problem was not that he sinned. It was that he had built a private theology in which his sin did not count.",
   texts: [
     { v: "mt7_21_23", cited: true,
-      note: "Jalyn read this to him almost in full, including the line about many saying “Lord, Lord” on that day.",
+      note: "The verdict text, and Jalyn read it to him almost in full. The people in it are not outsiders. They use the right name, they do real works in that name, and they are still told “I never knew you.” Deceived matches them item for item.",
       just: [
-        { t: "He said Lord and he meant it. The text says meaning it is not the test. Doing the Father's will is.", sound: true },
-        { t: "He never really believed at all, so the text fits him.", sound: false },
-        { t: "He failed to perform enough mighty deeds in Jalyn's name.", sound: false }
+        { t: "The charge is not that he did too little. It is that the man saying “Lord, Lord” and the man doing the Father's will were never the same person.", sound: true },
+        { t: "It proves that anyone who does public works of ministry is condemned for it.", sound: false },
+        { t: "He is condemned for the wrongs he committed, and his good works could not cover them.", sound: false }
+      ]},
+    { v: "cor1_8_3", cited: true,
+      note: "Set this beside “I never knew you” and the case opens up. Being known by God is not a record of attendance. It follows from loving him. Deceived could produce forty years of activity and nothing that looked like love.",
+      just: [
+        { t: "“I never knew you” is not a memory failure. It is the exact negative of this verse: no love, therefore no knowing.", sound: true },
+        { t: "It means God only knows people who feel strongly, and Deceived was not emotional enough.", sound: false },
+        { t: "It means his works were the problem, because works are not love.", sound: false }
+      ]},
+    { v: "jn14_21", cited: true,
+      note: "The test the previous verse leaves open. How would anyone tell whether Deceived loved Jalyn? By this. Whoever has his commands and keeps them is the one who loves him. That is what the life review looked for, and it is what the review did not find.",
+      just: [
+        { t: "He kept the vocabulary and none of the commands, and this verse makes the commands the place where love becomes visible.", sound: true },
+        { t: "It teaches that obedience earns God's love, and Deceived failed to earn enough of it.", sound: false },
+        { t: "It means love is a private feeling, so no court could ever assess it.", sound: false }
       ]},
     { v: "ti1_16", cited: true,
-      note: "Jalyn asked whether he had listened when his teachers warned of those who claim to know God but deny him by the way they live.",
+      note: "His charge was denying Jalyn, and he heard it as absurd, because he had confessed him loudly for years. This is the verse that names the kind of denial he is guilty of. It is made with a life rather than with a mouth, which is exactly why he could not hear it.",
       just: [
-        { t: "He knew Jalyn and said so constantly. His deeds were the denial, and they were louder than the profession.", sound: true },
-        { t: "He did not know Jalyn well enough because he had studied too little.", sound: false },
-        { t: "His claim to know Jalyn was a deliberate lie he told to others.", sound: false }
-      ]},
-    { v: "jas2_14_19", cited: true,
-      note: "Jalyn had a former teacher of the school stand and read this aloud to him from the sacred writings.",
-      just: [
-        { t: "He asked to be saved on faith alone. This is the text that says a faith producing nothing had already died.", sound: true },
-        { t: "It proves faith is worthless and that only works matter.", sound: false },
-        { t: "He did have works, they were simply bad ones, so the text does not apply.", sound: false }
+        { t: "He denied Jalyn the way this verse describes, by his deeds, which is why the charge sounded like a clerical error to him.", sound: true },
+        { t: "It means anyone whose deeds fall short has denied God, which would empty the hall.", sound: false },
+        { t: "It condemns him for claiming to know God at all, since nobody really can.", sound: false }
       ]},
     { v: "eph2_8_9", cited: false,
-      note: "This is Deceived's own argument, nearly word for word. Jalyn never disputed the text. He disputed whether Deceived possessed the faith it describes. Note that the very same verse had already worked in a man's favour earlier that morning: Ruthless could not have earned anything in seven days, and did not need to.",
+      note: "This is Deceived's own argument, nearly word for word, and the text is not in dispute. What is in dispute is whether he ever had the faith it describes. Watch what this one verse has already done this morning: it convicted a man who tried to outbid it, and it acquitted a man who simply took it. It does neither for someone who only quotes it.",
       just: [
-        { t: "He believed, and salvation comes by faith and not works, so he should be saved.", sound: false },
-        { t: "Since no one can boast, his lifestyle could not have disqualified him.", sound: false },
-        { t: "Grace covers what he did, because he could never have earned it anyway.", sound: false }
+        { t: "He was saved by grace through faith, and he had faith, so the verdict is wrong.", sound: false },
+        { t: "Since salvation is not from works, the emptiness of his life is beside the point.", sound: false },
+        { t: "Because no one may boast, his lack of fruit cannot be held against him.", sound: false }
       ]}
   ]
 },
@@ -255,7 +262,7 @@ const CASES = [
     "Jalyn asked an underruler how many citizens Patient had influenced for the kingdom. The answer was just over five thousand."
   ],
   measureReason: "A throne in the Regal Center, working directly alongside the king. She is one of the seventy-eight rulers of the city.",
-  lesson: "Ask the class what they would have written on her performance review in Endel. Then ask what changed between that review and this one. Nothing about her life changed. Only the light it was read in.",
+  lesson: "Ask yourself what you would have written on her performance review back in Endel. Then ask what changed between that review and this one. Nothing about her life changed. Only the light it was read in.",
   texts: [
     { v: "cor2_9_10", cited: true,
       note: "Jalyn named this the multiplication principle and used it to explain how a secretary reached five thousand people.",
@@ -326,35 +333,42 @@ const CASES = [
   ruling: "Faint Heart, you are guilty of falling away from righteousness and denying me by treason, and are to be taken to the forsaken land of Lone.",
   reason: "This is the hardest ruling in the parable, and Jalyn does not soften it. She was genuinely wronged. He does not dispute that for a moment. What he disputes is the conclusion she drew from it. “Such will be the spread of evil that many people's love will grow cold. But whoever holds out to the end will be saved. You did not endure to the end.” When she argued that no one could pluck her from his hand, he answered: “No one can pluck you out of my hand, but I never said you couldn't walk away. You alone hold that power.”",
   measureReason: "She had every advantage of knowledge. She was the best student in the class. That places her among those who knew.",
-  lesson: "Handle this one carefully. Faint Heart is a victim, and the parable says so plainly. The question it presses is not whether her wound was real but what she did with it for the rest of her life. Worth asking the class: what would it have cost her to forgive Slander in that first week, and what did it cost her not to?",
+  lesson: "Sit with this one. Faint Heart is a victim, and the parable says so plainly. The question it presses is not whether her wound was real but what she did with it for the rest of her life. What would it have cost her to forgive Slander in that first week, and what did it cost her not to?",
   texts: [
     { v: "mt24_12_13", cited: true,
-      note: "Jalyn's first answer to her. He had warned her teachers of exactly this, and she had heard the warning as a student.",
+      note: "Jalyn's words to her come straight out of this verse, and it fits her more exactly than anything else in the writings: love that goes cold under the pressure of real evil. Notice that the verse never denies the evil. It names the test anyway, and the test is endurance.",
       just: [
-        { t: "Her love did grow cold, exactly as the warning said it would. The half she failed is the second: she did not persevere.", sound: true },
-        { t: "The evildoing around her caused her love to die, so the text excuses her.", sound: false },
-        { t: "She endured a great deal of pain, so she satisfied the text.", sound: false }
+        { t: "Her love did grow cold, and what cooled it was genuine wickedness. The verse still makes the ending, not the injury, the thing that decides.", sound: true },
+        { t: "It means anyone whose feelings toward God cool off has already lost, with no way back.", sound: false },
+        { t: "It condemns her for the evil that was done to her, since that evil is what the verse is describing.", sound: false }
       ]},
-    { v: "ezek33_12_13", cited: true,
-      note: "Jalyn's answer to “But what about all the good I did?” He quoted the prophet on the just who turn from justice.",
+    { v: "ezek18_24", cited: true,
+      note: "The mirror image of the text that acquitted Ruthless: same prophet, same chapter, running the other direction. This is the answer to “but what about all the good I did?” A record is read from where a life ended, not from its best stretch.",
       just: [
-        { t: "She asked what happened to all the good she did. This is the answer: relying on it while doing wrong, none of it is remembered.", sound: true },
-        { t: "Her early righteousness should have been enough to cover her later sin.", sound: false },
-        { t: "It shows that God forgets good deeds arbitrarily.", sound: false }
+        { t: "She asked for her strongest years to be weighed. This verse says the question is which direction she was facing at the end.", sound: true },
+        { t: "It means God forgets the good things people do, which would make doing them pointless.", sound: false },
+        { t: "It applies to the wicked who stay wicked, so it has nothing to say about her.", sound: false }
+      ]},
+    { v: "jn1_1_9", cited: true,
+      note: "The verse that makes this sentence just instead of merely severe. The way back was one honest acknowledgment, and it was available on every one of the fourteen thousand days she spent holding the injury. She is not sentenced for the wound. She is sentenced for what she would not put down.",
+      just: [
+        { t: "Forgiveness was never withheld from her. It was offered on a condition she refused to meet, and she refused it for forty years.", sound: true },
+        { t: "It shows she was forgiven automatically, because the verse promises forgiveness.", sound: false },
+        { t: "It means her sin was too great to be forgiven, which is why she was never cleansed.", sound: false }
       ]},
     { v: "rev3_5", cited: true,
-      note: "Her last argument was that a name in the Book of Life cannot be erased. Jalyn answered from this verse: promising never to erase it presumes erasure is possible.",
+      note: "Her final argument was that a name in the book of life cannot be erased. This is the verse she was standing on. Read it slowly, because a promise never to erase a name assumes that erasing is a thing that can happen, and the promise is addressed to a specific person.",
       just: [
-        { t: "She asked how a name could be erased. Jalyn's answer was that promising never to erase it presumes erasure is possible.", sound: true },
-        { t: "The text guarantees that no name can ever be removed under any circumstance.", sound: false },
-        { t: "The white garments are handed out for good behavior.", sound: false }
+        { t: "The promise is made to the victor. She held on to the promise and let go of the condition it is attached to.", sound: true },
+        { t: "It proves no name can ever be erased, so the scribe must have made an error.", sound: false },
+        { t: "It means names get erased routinely, so nobody can have any assurance at all.", sound: false }
       ]},
-    { v: "jas2_10", cited: false,
-      note: "This governs someone asking for a favorable balance on a ledger, which is Independent's case, not hers. Faint Heart's problem was never a single breach. It was a bitterness she nursed for years and never once repented of.",
+    { v: "rom8_38_39", cited: false,
+      note: "The verse most people reach for to save her, and it is a real promise, not a trap laid for the unwary. Read the list, though. Death, angels, powers, height, depth: every item is something that comes at a person from outside. Nothing on that list is a person's own settled refusal to let go of an injury. Paul is promising that nothing can take you away. He is not discussing whether you can walk.",
       just: [
-        { t: "She broke one law, and one breach makes her guilty of all of them.", sound: false },
-        { t: "Her unforgiveness was one slip, and one slip is enough.", sound: false },
-        { t: "Everyone is guilty of everything, so her sentence is essentially arbitrary.", sound: false }
+        { t: "Nothing can separate her from the love of God, so this verdict contradicts Scripture.", sound: false },
+        { t: "The love of God is unconditional, so what she did after the injury could not have mattered.", sound: false },
+        { t: "She was wronged by other people, and this verse says other people cannot separate her from God.", sound: false }
       ]}
   ]
 },
@@ -488,7 +502,7 @@ const CASES = [
         { t: "It means he should never have taught in the first place.", sound: false }
       ]},
     { v: "mt18_6", cited: false,
-      note: "This is the reasoning most students use to send him to Lone, and Jalyn did not use it. The millstone is spoken over someone who causes a little one to sin. Motivator's students were failed, flattered and left unwarned, which is a grave thing and a different thing. The parable is careful about that distinction even when it is painful, and so is the text.",
+      note: "This is the reasoning that most often sends him to Lone, and Jalyn did not use it. The millstone is spoken over someone who causes a little one to sin. Motivator's students were failed, flattered and left unwarned, which is a grave thing and a different thing. The parable is careful about that distinction even when it is painful, and so is the text.",
       just: [
         { t: "His students fell into Lone because of what he taught them, so the millstone applies.", sound: false },
         { t: "He caused little ones to stumble by covering over their faults.", sound: false },
@@ -532,35 +546,42 @@ const CASES = [
   ruling: "Double Life, you are guilty of treason, falling away from righteousness, and being a stumbling block, and are to be taken to the forsaken land of Lone, where you will receive the greatest punishment and torments.",
   reason: "He asked why his sentence was heavier than Independent's when Independent had rejected Jalyn outright. Jalyn answered from the writings Double Life himself had taught: the servant who knew his master's will and did not do it is beaten severely, while the one who did not know is beaten lightly. “Independent was far less aware of his transgressions, but you had both awareness and knowledge. His punishment, though severe, will be lighter than your own.”",
   measureReason: "Not the metal building at all. A dungeon underground near the hot sulfur rocks, unvented, hotter than anywhere else, and alone. “For you, I've reserved a place in the deepest darkness.” He will never again see light of any kind.",
-  lesson: "Now go back to Motivator. Two teachers. Both harmed students. One is in the flatlands of Affabel and one is in the deepest hole in Lone. The difference is not the size of the damage. Push the class to name what it actually is.",
+  lesson: "Now go back to Motivator. Two teachers. Both harmed students. One is in the flatlands of Affabel and one is in the deepest hole in Lone. The difference is not the size of the damage. Name what it actually is.",
   texts: [
-    { v: "lk12_47_48", cited: true,
-      note: "Jalyn's direct answer to “why am I to receive the greatest torment?” This is the text that grades punishment by knowledge.",
+    { v: "lk12_45_48", cited: true,
+      note: "Jalyn answered his question out of this passage, and the whole of it matters, not only the grading at the end. The man in it is a servant who calls the master his own. What he does is help himself to the people placed under his care while the master is away. Where he ends is a place with the unfaithful. Only then come the two beatings, severe for the one who knew and light for the one who did not.",
       just: [
-        { t: "He asked why his sentence was heavier than Independent's. This is the answer: the servant who knew and did not act is beaten severely, and much was entrusted to him.", sound: true },
-        { t: "It means all servants receive an identical punishment.", sound: false },
-        { t: "It excuses Independent entirely.", sound: false }
+        { t: "He was a servant with people under his care, and he used the delay to feed on them. The severity follows from what he knew, and he knew everything.", sound: true },
+        { t: "It shows that every teacher who fails his students receives an identical sentence.", sound: false },
+        { t: "It means the master was unfair to arrive without warning.", sound: false }
       ]},
     { v: "mt18_6", cited: true,
-      note: "Jalyn quoted the millstone warning directly, immediately after naming Faint Heart as the one he was given authority to protect.",
+      note: "The charge he could not understand. He asked how he was a stumbling block, and this is the answer. The harm named here is not harm to someone's comfort or reputation. It is harm to a little one's belief, done by someone the little one had reason to trust.",
       just: [
-        { t: "Faint Heart was entrusted to his care and he used her. He was given authority to protect and used it to prey. That is the millstone.", sound: true },
-        { t: "He caused her to stumble by teaching her badly in the classroom.", sound: false },
-        { t: "The text applies because she ended up in Lone.", sound: false }
+        { t: "The student he pursued is the little one in this verse. He did not merely wrong her; he used his position to break the faith she had.", sound: true },
+        { t: "It means any teacher whose students struggle has earned the millstone.", sound: false },
+        { t: "The millstone is a figure of speech and carries no weight in an actual sentence.", sound: false }
       ]},
-    { v: "jude_13", cited: true,
-      note: "Jalyn's words were “For you, I've reserved a place in the deepest darkness.” This is the text behind the measure, not the verdict.",
+    { v: "jude_12_13", cited: true,
+      note: "The measure, and the portrait. Jude is describing people who sit inside the community and eat at its table without a flicker of fear, and who are twice dead: dead once at the start, made alive, and then dead again. The last line is where the deepest darkness comes from.",
       just: [
-        { t: "This is the text behind the measure rather than the verdict. The gloom is reserved, and reserved means prepared in advance for someone specific.", sound: true },
-        { t: "It describes everyone who is sent to Lone.", sound: false },
-        { t: "The darkness described here is temporary.", sound: false }
+        { t: "He never left. He taught, he was trusted, and he was hollow the whole time, which is what this passage describes and why the darkest place is his.", sound: true },
+        { t: "The reserved darkness is for outsiders who never knew the truth in the first place.", sound: false },
+        { t: "It is poetic exaggeration and does not describe anyone in particular.", sound: false }
       ]},
-    { v: "ezek13_10_11", cited: false,
-      note: "Motivator's text, not his. Motivator's sin was what he left out of the classroom. Double Life's sin was what he did outside it. Reading Double Life as merely an unbalanced teacher misses the charge Jalyn actually brought: he was a stumbling block who shipwrecked a faith he had been given authority to protect.",
+    { v: "heb10_26_27", cited: true,
+      note: "The verse for a man who knew exactly what he was doing and did it for years. It is not written about someone who falls and gets up. The words are “sin deliberately after receiving knowledge of the truth,” and he had more of that knowledge than anyone else called today.",
       just: [
-        { t: "He whitewashed the flimsy walls in the lives of his students.", sound: false },
-        { t: "He said peace when there was no peace.", sound: false },
-        { t: "He led the people astray by what he taught them.", sound: false }
+        { t: "He did not drift. He taught the writings by day and broke them by night, on purpose, for years, and never once turned back.", sound: true },
+        { t: "It means any believer who sins after conversion has used up the sacrifice.", sound: false },
+        { t: "It proves that the sins he committed were of an unusually severe kind.", sound: false }
+      ]},
+    { v: "jas2_10", cited: false,
+      note: "His own argument, and it is the strongest thing he says all morning. If one breach makes a person guilty of the whole law, then he and the man judged first stand in the same place and should receive the same sentence. The verse is true. It is answering a different question, which is whether a partial record can acquit anybody. It was never a rule that every guilty person receives the same measure.",
+      just: [
+        { t: "Every sin makes a person equally guilty, so his sentence should match the first man's.", sound: false },
+        { t: "It proves that his years of teaching counted for nothing at all.", sound: false },
+        { t: "It shows that grading punishments is unjust, because guilt is guilt.", sound: false }
       ]}
   ]
 },
@@ -601,7 +622,7 @@ const CASES = [
     "Jalyn states that Brutal personally influenced more than a thousand lives for the kingdom, and that every one of them was also credited to Patient."
   ],
   measureReason: "The parable does not narrate his sentencing. He is still waiting to be called when Jalyn speaks about him, so his verdict is certain and his station is never stated. This case is scored on the verdict alone.",
-  lesson: "The one nobody liked. Ask whether any student docked him for being annoying, and where in the Book that criterion appears. Then note the multiplication: his thousand lives also went onto Patient's account. Nobody's ledger is only their own.",
+  lesson: "The one nobody liked. Worth asking whether you docked him for being annoying, and where in the Book that criterion appears. Then note the multiplication: his thousand lives also went onto Patient's account. Nobody's ledger is only their own.",
   texts: [
     { v: "sam1_16_7", cited: true,
       note: "The principle the whole case turns on. Endel judged Brutal by how he came across, and the community's verdict on him was close to unanimous. Jalyn reports what he found in the heart instead, and it is not what anyone expected.",
@@ -691,7 +712,7 @@ const CASES = [
         { t: "It means he should have run for a lower office.", sound: false }
       ]},
     { v: "mt7_21_23", cited: false,
-      note: "The most common wrong ruling on this case sends Selfish to Lone, and this is the text students reach for. Jalyn's actual words were “you are my servant, you believed in me and submitted to my lordship even though you wasted so much.” Deceived got this text. Selfish did not. The difference is not the amount of waste. It is whether there was a real submission underneath it.",
+      note: "The most common wrong ruling on this case sends him to Lone, and this is the text it rests on. Jalyn's actual words were “you are my servant, you believed in me and submitted to my lordship even though you wasted so much.” Deceived got this text. Selfish did not. The difference is not the amount of waste. It is whether there was a real submission underneath it.",
       just: [
         { t: "He called Jalyn lord without doing his will, so “I never knew you” applies to him.", sound: false },
         { t: "He sounded religious without being godly.", sound: false },
@@ -763,12 +784,12 @@ const CASES = [
         { t: "It rewards those who intend to rule harshly.", sound: false },
         { t: "It means she won a contest against the other citizens.", sound: false }
       ]},
-    { v: "lk12_47_48", cited: false,
-      note: "A text about servants who failed, which Jalyn used on Double Life. Charity received the smallest startup sum of the five graduates. The parable's point about her runs the opposite direction: she was given the least and returned the most.",
+    { v: "lk12_45_48", cited: false,
+      note: "The passage that sent the last teacher to the deepest darkness, and the last line of it is the reason someone reaches for it here: much will be required of the person entrusted with much. Charity was entrusted with the least. She received the smallest startup sum of the five graduates and gave part of it away that same week. The passage runs the wrong direction for her in every particular.",
       just: [
-        { t: "She was entrusted with much, and much was therefore required of her.", sound: false },
-        { t: "She knew her master's will and acted on it, so she avoids the beating.", sound: false },
-        { t: "More was demanded of her because she understood more than the others.", sound: false }
+        { t: "She was entrusted with much, so much was required of her.", sound: false },
+        { t: "She knew her master's will and acted on it, so she escapes the beating.", sound: false },
+        { t: "More was demanded of her because she understood more than the others did.", sound: false }
       ]}
   ]
 }

@@ -13,7 +13,7 @@ Each case runs through six phases:
 2. **The defendant speaks** — their actual words from the parable
 3. **The verdict** — Affabel or the forsaken land of Lone
 4. **The station or the measure** — where in Affabel, or where in Lone
-5. **The texts** — select every Scripture the ruling rests on, from a pool of three or four
+5. **The texts** — select every Scripture the ruling rests on, from a pool of three to five
 6. **The reading** — for each text selected, choose how it justifies the ruling
 
 Then Jalyn's actual ruling is revealed, text by text: which ones he used, which ones
@@ -24,9 +24,11 @@ he did not, and whether the student read them the way he did.
 Every text in every pool is genuinely in play. There are no filler options, and no verse
 is included merely because it appears somewhere in the scene. Each pool holds:
 
-- **Two or three that Jalyn actually cited** in that judgment, and only the ones that carry
-  the final verdict. Passages he used to set the scene or to answer a general question are
-  left out, so every option a student can pick is a real candidate for the ruling.
+- **Two to four that carry the final verdict.** Most come straight from the parable. Where
+  the parable's own citation only made sense with Jalyn standing there to explain it, it has
+  been replaced by the passage that actually governs the case, so every option a student can
+  pick stands on its own. The four rulings to Lone carry the heaviest apparatus, because those
+  are the ones a student has to be able to defend.
 - **One that he did not** — always the specific verse a student reaches for when they get
   that case wrong
 
@@ -36,8 +38,8 @@ pool carries the millstone of Matthew 18:6, which Jalyn read over Double Life in
 
 Each text then offers three readings, one of which is the reading Jalyn used. The wrong
 readings are not nonsense; they are positions people actually hold. Ephesians 2:8-9 appears
-in two different pools and is correct in only one of them, because it is also the verse
-Deceived used to argue he should be saved.
+in three different pools. It convicts the man who tried to outbid it, acquits the man who
+simply took it, and fails the man who only quoted it.
 
 ## The docket
 
